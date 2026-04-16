@@ -1,0 +1,31 @@
+# 9.7.3 SetMagicBoxScriptMode
+
+Description: 设置脚本的启动与退出 
+
+KeyWords:
+
+portName: string
+
+isEnable: int (0:STOP 1:START)
+
+name: String 
+
+
+
+INPUT:
+
+```json
+
+```json
+{
+    "id": 1,
+    "jsonrpc": "2.0",
+    "method": "dobotlink.MagicianGO.SetMagicBoxScriptMode",
+    "params": {
+        "portName": "COM4",
+        "isEnable": 1 ,//1启动脚本，0退出脚本（不需要脚本名）
+        "name": Playback/***.py或Script/***.py或Draw/***.py
+    }
+}
+```
+Copyright © 2019. All rights reserved. (To change the copyright info, just edit it in template.)

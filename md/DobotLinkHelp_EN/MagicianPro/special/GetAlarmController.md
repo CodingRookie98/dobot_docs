@@ -1,0 +1,71 @@
+# 8.14.1 GetAlarmController
+
+Description: 返回控制器报警信息文件
+
+KeyWords:
+
+portName: string
+
+data: object
+
+
+
+INPUT:
+
+```json
+
+```json
+{
+    "id": 1,
+    "jsonrpc": "2.0",
+    "method": "dobotlink.MagicianPro.GetAlarmController",
+    "params": {
+        "portName": "192.168.1.6"
+    }
+}
+```
+
+
+
+OUTPUT:
+
+```json
+
+```json
+{
+    "id": 1,
+    "jsonrpc": "2.0",
+    "result": {
+        [
+    {
+        "id": 0,
+        "level": 0,
+        "en": {
+            "description" : "No error",
+            "cause" : "",
+            "solution" : ""
+        },
+        "zh_CN": {
+            "description" : "无错误",
+            "cause" : "",
+            "solution" : ""
+        }
+    },
+    {
+        "id": 16,
+        "level": 0,
+        "en": {
+            "description" : "Inverse kinematics error with singularity",
+            "cause" : "",
+            "solution" : ""
+        },
+        "zh_CN": {
+            "description" : "逆解算奇异",
+            "cause" : "",
+            "solution" : ""
+        }
+    },... ...]
+    }
+}
+```
+Copyright © 2019. All rights reserved. (To change the copyright info, just edit it in template.)

@@ -1,0 +1,29 @@
+# 8.2.9 DeleteFolder
+
+Description: 删除文件夹 
+
+KeyWords:
+
+portName: string
+
+url: string
+
+
+
+INPUT:
+
+```json
+
+```json
+{
+    "id": 1,
+    "jsonrpc": "2.0",
+    "method": "dobotlink.MagicianPro.DeleteFolder",
+    "params": {
+        "portName": "192.168.1.6",
+        "url": "/xxx/xxx",
+        "folderName": "Default1"
+    }
+}
+```
+Copyright © 2019. All rights reserved. (To change the copyright info, just edit it in template.)
