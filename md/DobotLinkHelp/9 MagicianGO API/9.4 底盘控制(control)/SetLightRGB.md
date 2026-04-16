@@ -1,23 +1,5 @@
-::: {#winchm_template_top}
-::: {#winchm_template_button}
-[![Previous topic](../../template2/btn_prev_n.gif){#winchm_template_prev
-border="0"}](SetIncrementClosedLoop.htm "Previous topic")[![Next
-topic](../../template2/btn_next_n.gif){#winchm_template_next
-border="0"}](SetLightPrompt.html "Next topic")
-:::
+### 9.4.14 SetLightRGB
 
-::: {#winchm_template_navigation}
-Help \> 9 MagicianGO API \> 9.4 底盘控制(control) \>
-:::
-
-::: {#winchm_template_title}
-9.4.14 SetLightRGB
-:::
-:::
-
-::: {#winchm_template_container}
-::: {#winchm_template_content}
-::: {#nstext}
 **KeyWords:**
 
 portName: string
@@ -37,13 +19,11 @@ b: int (蓝色亮度值（0-255）)
 
 cycle: float （周期（单位s）（如果是定时熄灭模式代表亮的时间,单位s））
 
-counts: int （次数：闪烁烁模式有效 -1：无限次， 1：1次，2：2次\... ）
-
- 
+counts: int （次数：闪烁烁模式有效 -1：无限次， 1：1次，2：2次... ）
 
 INPUT:
 
-``` {.language-json style="BOX-SIZING: border-box; OVERFLOW: auto; WORD-WRAP: normal; FONT-SIZE: 13px; FONT-FAMILY: Consolas, Monaco, \"Andale Mono\", \"Ubuntu Mono\", monospace; BACKGROUND: rgb(245,242,240); WHITE-SPACE: pre; WORD-SPACING: 0px; TEXT-TRANSFORM: none; WORD-BREAK: normal; FONT-WEIGHT: 400; COLOR: black; PADDING-BOTTOM: 1em; FONT-STYLE: normal; TEXT-ALIGN: left; PADDING-TOP: 1em; PADDING-LEFT: 1em; MARGIN: 0px 0px 0.5em; ORPHANS: 2; WIDOWS: 2; LETTER-SPACING: normal; LINE-HEIGHT: 1.5; PADDING-RIGHT: 1em; TEXT-INDENT: 0px; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-style: initial; text-decoration-color: initial; border-radius: 3px; text-shadow: white 0px 1px; tab-size: 4; hyphens: none"}
+```json
 {
     "id": 1,
     "jsonrpc": "2.0",
@@ -60,11 +40,3 @@ INPUT:
     }
 }
 ```
-:::
-:::
-
-::: {#winchm_template_footer}
-Copyright © 2019. All rights reserved. (To change the copyright info,
-just edit it in template.)
-:::
-:::

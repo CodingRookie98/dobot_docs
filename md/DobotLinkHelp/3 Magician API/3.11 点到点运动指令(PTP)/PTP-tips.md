@@ -1,23 +1,5 @@
-::: {#winchm_template_top}
-::: {#winchm_template_button}
-[![Previous topic](../../template2/btn_prev_n.gif){#winchm_template_prev
-border="0"}](../jog/SetJOGCmd.html "Previous topic")[![Next
-topic](../../template2/btn_next_n.gif){#winchm_template_next
-border="0"}](SetPTPCmd.html "Next topic")
-:::
+## 3.11 点到点运动指令(PTP)
 
-::: {#winchm_template_navigation}
-Help \> 3 Magician API \>
-:::
-
-::: {#winchm_template_title}
-3.11 点到点运动指令(PTP)
-:::
-:::
-
-::: {#winchm_template_container}
-::: {#winchm_template_content}
-::: {#nstext}
 **ptpMode:**
 
 0:门型运动，参数为目标点参数
@@ -40,25 +22,4 @@ Help \> 3 Magician API \>
 
 9:门型运动，平移时运动模式为直线运动
 
- 
-
 运动超时默认为5s，如需配置请给出timeout字段。
-:::
-:::
-
-::: {#winchm_template_footer}
-Copyright © 2019. All rights reserved. (To change the copyright info,
-just edit it in template.)
-:::
-:::
-
-\
-
-------------------------------------------------------------------------
-
-\
-This file is decompiled from a .CHM file\
-by an UNREGISTERED version of Easy CHM.\
-You can download Easy CHM at :
-[http://www.eTextWizard.com](http://www.etextwizard.com/){target="_blank"}\
-\

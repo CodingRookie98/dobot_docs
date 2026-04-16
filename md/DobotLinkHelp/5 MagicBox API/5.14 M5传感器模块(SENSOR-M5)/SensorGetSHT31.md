@@ -1,69 +1,36 @@
-::: {#winchm_template_top}
-::: {#winchm_template_button}
-[![Previous topic](../../template2/btn_prev_n.gif){#winchm_template_prev
-border="0"}](SensorSHT31Init.html "Previous topic")[![Next
-topic](../../template2/btn_next_n.gif){#winchm_template_next
-border="0"}](SensorColorInit.html "Next topic")
-:::
+### 12.1.19 SensorGetSHT31
 
-::: {#winchm_template_navigation}
-Help \> [12 AI传感器套件](../../$$unsavedpage2.htm) \> 12.1
-m5传感器(SENSOR-M5) \>
-:::
-
-::: {#winchm_template_title}
-12.1.19 SensorGetSHT31
-:::
-:::
-
-::: {#winchm_template_container}
-::: {#winchm_template_content}
-::: {#nstext}
 **读取温湿度传感器**
-
- 
 
 请求参数 params
 
- 
-
   ----------- --------- ----------- -----------------
-   字段       类型      是否必填     说明
-   portName    string    是          通信端口
-   port        int       是          端口号（0\~5）
+  字段       类型     是否必填   说明
+  portName   string   是         通信端口
+  port       int      是         端口号（0~5）
   ----------- --------- ----------- -----------------
-
- 
 
 响应参数 result
 
   ------- ------- ----------- -------
-   字段   类型    是否必填     说明
-   tem     int     是          温度
-   hum     int     是          湿度
+  字段   类型   是否必填   说明
+  tem    int    是         温度
+  hum    int    是         湿度
   ------- ------- ----------- -------
-
- 
-
- 
-
- 
 
 **KeyWords:**
 
 portName: string
 
-port: int (0\~5)
+port: int (0~5)
 
 tem: int
 
 hum: int
 
- 
-
 INPUT:
 
-``` {.language-json style="BOX-SIZING: border-box; FONT-SIZE: 13px; OVERFLOW: auto; WORD-WRAP: normal; FONT-FAMILY: Consolas, Monaco, \"Andale Mono\", \"Ubuntu Mono\", monospace; BACKGROUND: rgb(245,242,240); WHITE-SPACE: pre; WORD-SPACING: 0px; TEXT-TRANSFORM: none; WORD-BREAK: normal; FONT-WEIGHT: 400; COLOR: black; PADDING-BOTTOM: 1em; FONT-STYLE: normal; TEXT-ALIGN: left; PADDING-TOP: 1em; PADDING-LEFT: 1em; ORPHANS: 2; WIDOWS: 2; MARGIN: 0px 0px 0.5em; LETTER-SPACING: normal; LINE-HEIGHT: 1.5; PADDING-RIGHT: 1em; TEXT-INDENT: 0px; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-style: initial; text-decoration-color: initial; border-radius: 3px; text-shadow: white 0px 1px; tab-size: 4; hyphens: none"}
+```json
 {
     "id": 1,
     "jsonrpc": "2.0",
@@ -75,36 +42,15 @@ INPUT:
 }
 ```
 
- 
-
 OUTPUT：
 
-``` {.language-json style="BOX-SIZING: border-box; FONT-SIZE: 13px; OVERFLOW: auto; WORD-WRAP: normal; FONT-FAMILY: Consolas, Monaco, \"Andale Mono\", \"Ubuntu Mono\", monospace; BACKGROUND: rgb(245,242,240); WHITE-SPACE: pre; WORD-SPACING: 0px; TEXT-TRANSFORM: none; WORD-BREAK: normal; FONT-WEIGHT: 400; COLOR: black; PADDING-BOTTOM: 1em; FONT-STYLE: normal; TEXT-ALIGN: left; PADDING-TOP: 1em; PADDING-LEFT: 1em; ORPHANS: 2; WIDOWS: 2; MARGIN: 0px 0px 0.5em; LETTER-SPACING: normal; LINE-HEIGHT: 1.5; PADDING-RIGHT: 1em; TEXT-INDENT: 0px; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-style: initial; text-decoration-color: initial; border-radius: 3px; text-shadow: white 0px 1px; tab-size: 4; hyphens: none"}
+```json
 {
-  "id": 1,
-  "jsonrpc": "2.0",
-  "result": {
-   "hum": 0,
-   "tem": 0
-  }
+ "id": 1,
+ "jsonrpc": "2.0",
+ "result": {
+ "hum": 0,
+ "tem": 0
+ }
 }
 ```
-:::
-:::
-
-::: {#winchm_template_footer}
-Copyright © 2019. All rights reserved. (To change the copyright info,
-just edit it in template.)
-:::
-:::
-
-\
-
-------------------------------------------------------------------------
-
-\
-This file is decompiled from a .CHM file\
-by an UNREGISTERED version of Easy CHM.\
-You can download Easy CHM at :
-[http://www.eTextWizard.com](http://www.etextwizard.com/){target="_blank"}\
-\
