@@ -12,29 +12,29 @@
 
 ```
 ./
-├── index.md            完整文档索引
-├── preface.md          前言/开发协议说明
-├── CR/                 CR 控制器相关 API
-├── DebuggerLite/       调试器相关 API
-├── DobotLink/          DobotLink 核心 API
-├── Download/           下载相关 API
-├── ErrorCode/          错误码说明
-├── M1/                 M1 机器人相关 API
-├── MagicBox/           MagicBox 相关 API
-├── Magician/           Magician 相关 API
-├── MagicianGO/         MagicianGO 相关 API
-├── MagicianLite/       MagicianLite 相关 API
-└── MagicianPro/        MagicianPro 相关 API
+├── index.md               完整文档索引
+├── 1 前言/                 前言/开发协议说明
+├── 2 DobotLink API/       DobotLink 核心 API
+├── 3 Magician API/        Magician 相关 API
+├── 4 MagicianLite API/    MagicianLite 相关 API
+├── 5 MagicBox API/        MagicBox 相关 API
+├── 6 M1 API/              M1 机器人相关 API
+├── 7 CR API/              CR 控制器相关 API
+├── 8 MagicianPro API/     MagicianPro 相关 API
+├── 9 MagicianGO API/      MagicianGO 相关 API
+├── 10 DebuggerLite API/   调试器相关 API
+├── 11 Download API/       下载与固件升级相关 API
+└── 13 错误码/              错误码说明
 ```
 
 ## 文件分类说明
 
 | 分类 | 说明 |
 |------|------|
-| `index.md` | 完整文档索引，按字母顺序排列所有文档链接 |
-| `preface.md` | 开发协议说明与前言 |
-| `CR/`, `DebuggerLite/`, `DobotLink/`, `Download/`, `ErrorCode/` | 通用功能模块 API |
-| `M1/`, `MagicBox/`, `Magician/`, `MagicianGO/`, `MagicianLite/`, `MagicianPro/` | 按机器人型号分类的 API 文档 |
+| [`index.md`](./index.md) | 完整文档索引，按字母顺序排列所有文档链接 |
+| [`1 前言/`](./1%20前言) | 协议说明与开发前言说明 |
+| [`2 DobotLink API/`](./2%20DobotLink%20API), [`10 DebuggerLite API/`](./10%20DebuggerLite%20API), [`11 Download API/`](./11%20Download%20API), [`13 错误码/`](./13%20错误码) | 核心功能、调试工具、下载以及错误码通用模块 |
+| [`3 Magician API/`](./3%20Magician%20API) 至 [`9 MagicianGO API/`](./9%20MagicianGO%20API) | 按机械臂或机器人硬件型号分类的专用 API 文档 |
 
 ## 转换说明
 
@@ -43,7 +43,7 @@
 - **来源**：`DobotLinkHelp.CHM`
 - **转换工具**：`extract_chmLib` + `pandoc`
 - **编码处理**：GBK → UTF-8 转换，确保中文正确显示
-- **整理时间**：2026-04-16
+- **整理时间**：2026-04-16（于 2026-05-26 完成全面复核与死链修复）
 
 ## 验证状态
 
