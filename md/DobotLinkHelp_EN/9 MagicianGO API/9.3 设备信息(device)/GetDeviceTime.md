@@ -8,8 +8,6 @@ gSystick: int
 
 passtime: string
 
- 
-
 INPUT:
 
 ``` language-json

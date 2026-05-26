@@ -4,8 +4,6 @@ portName: string
 
 axis: 1~6
 
- 
-
 INPUT:
 
 ``` language-json

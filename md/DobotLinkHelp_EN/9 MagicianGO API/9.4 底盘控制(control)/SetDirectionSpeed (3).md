@@ -8,8 +8,6 @@ dir: float(方向，单位：°（-180-180）)
 
 speed: float(移动速度，cm/s)
 
- 
-
 INPUT:
 
 ``` language-json
@@ -20,7 +18,7 @@ INPUT:
     "params": {
         "portName": "COM4",
         "dir": 10.0,
-        "speed": 10.0 
+        "speed": 10.0
     }
 }
 ```

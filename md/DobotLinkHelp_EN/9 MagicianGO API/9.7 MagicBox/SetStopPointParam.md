@@ -1,10 +1,6 @@
 **Set automatic parking service parameters**
 
- 
-
 request params
-
- 
 
 |           |         |           |                                                         |
 |-----------|---------|-----------|---------------------------------------------------------|
@@ -13,20 +9,12 @@ request params
 |  scopeErr |  int    |  yes      |  enter the parking range, the default parameter is 40cm |
 |  stopErr  |  int    |  yes      |  parking accuracy, default parameter 2cm                |
 
- 
-
- 
-
 response result
 
 |         |        |           |                                                                       |
 |---------|--------|-----------|-----------------------------------------------------------------------|
 |   field |  type  |  required |  explain                                                              |
 |  result |  bool  |  yes      |  response result (true: operation succeeded, false: operation failed) |
-
- 
-
- 
 
 **KeyWords:**
 
@@ -35,8 +23,6 @@ portName: string
 scopeErr: int, enter the parking range, the default parameter is 40cm
 
 stopErr: int, parking accuracy, default parameter 2cm
-
- 
 
 INPUT:
 

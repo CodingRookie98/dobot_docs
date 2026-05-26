@@ -1,9 +1,6 @@
 功能:
 
-设置jump速度参数  
-  
-  
-  
+设置jump速度参数
 
 INPUT:
 
@@ -26,7 +23,6 @@ OUTPUT：
     "id": 1,
     "jsonrpc": "2.0",
     "result": true
-
 
 }
 ```

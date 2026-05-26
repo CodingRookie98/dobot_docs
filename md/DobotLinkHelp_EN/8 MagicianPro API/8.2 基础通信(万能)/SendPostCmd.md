@@ -6,8 +6,6 @@ url: string
 
 body: object
 
- 
-
 INPUT:
 
 ``` language-json

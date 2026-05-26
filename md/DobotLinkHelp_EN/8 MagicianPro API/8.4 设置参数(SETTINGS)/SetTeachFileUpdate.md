@@ -6,8 +6,6 @@ data: object
 
 file: string
 
- 
-
 INPUT:
 
 ``` language-json

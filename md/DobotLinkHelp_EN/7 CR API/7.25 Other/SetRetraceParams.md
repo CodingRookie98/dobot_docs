@@ -5,11 +5,11 @@
 INPUT:
 
 ``` language-json
-{    
-    "id": 1,    
-    "jsonrpc": "2.0",    
+{
+    "id": 1,
+    "jsonrpc": "2.0",
     "method": "dobotlink.CR.SetRetraceParams",
-    "params": {        
+    "params": {
         "portName": "192.168.1.6",
         "data":{
            "multi" : 1          //速度倍数
@@ -22,12 +22,10 @@ INPUT:
 
 OUTPUT：
 
- 
-
 ``` language-json
-{ 
-    "id": 1, 
+{
+    "id": 1,
     "jsonrpc": "2.0",
-     "result":{"value":true/false} 
+     "result":{"value":true/false}
 }
 ```

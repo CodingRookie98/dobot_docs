@@ -14,8 +14,6 @@ angle: float(deg)
 
 mode: int(1:keep 2:whirling)
 
- 
-
 INPUT:
 
 ``` language-json

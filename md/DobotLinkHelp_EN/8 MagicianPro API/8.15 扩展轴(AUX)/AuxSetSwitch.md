@@ -8,8 +8,6 @@ auxJoint: bool，轴功能开关
 
 addPoints: bool，示教点功能开关
 
- 
-
 INPUT:
 
 ``` language-json
@@ -22,7 +20,7 @@ INPUT:
         "data": {
             "auxJoint": true,
             "addPoints": true
-        }    
+        }
     }
 }
 ```

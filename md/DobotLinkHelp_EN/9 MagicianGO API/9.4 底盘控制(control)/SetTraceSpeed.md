@@ -6,8 +6,6 @@ portName: string
 
 speed: float
 
- 
-
 INPUT:
 
 ``` language-json
@@ -17,7 +15,7 @@ INPUT:
     "method": "dobotlink.MagicianGO.SetTraceSpeed",
     "params": {
         "portName": "COM4",
-        "speed": 10 
+        "speed": 10
     }
 }
 ```

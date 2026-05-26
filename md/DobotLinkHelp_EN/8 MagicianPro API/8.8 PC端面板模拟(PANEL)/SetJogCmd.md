@@ -10,8 +10,6 @@ posBtns: array(bool) (\[x, y, z, a, b, c\])
 
 negBtns: array(bool) (\[x, y, z, a, b, c\])
 
- 
-
 INPUT:
 
 ``` language-json
@@ -24,7 +22,7 @@ INPUT:
         "data": {
             "posBtns": [true, false, false, false, false, false],
             "negBtns": [false, false, false, false, false, false]
-        }    
+        }
     }
 }
 ```

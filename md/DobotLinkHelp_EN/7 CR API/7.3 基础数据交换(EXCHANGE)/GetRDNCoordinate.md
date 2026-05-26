@@ -1,6 +1,6 @@
 功能:
 
-   获取exchange接口中的 rdnCoordinate字段  
+   获取exchange接口中的 rdnCoordinate字段
 
 INPUT:
 
@@ -23,6 +23,6 @@ OUTPUT：
     "id": 1,
 
     "jsonrpc": "2.0",
-    "result": 1/0  // 1 发生碰撞/0 未发生碰撞(普通的碰撞) 
+    "result": 1/0  // 1 发生碰撞/0 未发生碰撞(普通的碰撞)
  }
 ```

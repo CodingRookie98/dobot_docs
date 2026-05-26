@@ -8,8 +8,6 @@ data: object
 
 value: bool
 
- 
-
 INPUT:
 
 ``` language-json

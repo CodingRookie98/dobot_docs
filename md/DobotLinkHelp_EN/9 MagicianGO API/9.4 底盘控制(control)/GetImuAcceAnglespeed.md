@@ -16,8 +16,6 @@ gy: float(角速度，°/s)
 
 gz: float(角速度，°/s)
 
- 
-
 INPUT:
 
 ``` language-json
@@ -26,12 +24,10 @@ INPUT:
     "jsonrpc": "2.0",
     "method": "dobotlink.MagicianGO.GetImuSpeed",
     "params": {
-        "portName": "COM4" 
+        "portName": "COM4"
     }
 }
 ```
-
- 
 
 OUTPUT:
 
@@ -45,7 +41,7 @@ OUTPUT:
          "az": 10.0,
          "gx": 10.0,
          "gy": 10.0,
-         "gz": 10.0 
+         "gz": 10.0
      }
 }
 ```

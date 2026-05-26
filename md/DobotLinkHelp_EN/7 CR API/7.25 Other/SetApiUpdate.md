@@ -2,8 +2,6 @@
 
     通知控制器更新Dobot+的api
 
- 
-
 INPUT:
 
 ``` language-json

@@ -4,8 +4,6 @@
 
 dpid: int，脚本进程内部ID，控制脚本进程唯一标识
 
- 
-
 INPUT:
 
 ``` language-json

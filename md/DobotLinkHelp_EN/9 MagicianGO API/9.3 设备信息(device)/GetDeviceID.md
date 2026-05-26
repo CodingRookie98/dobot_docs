@@ -6,8 +6,6 @@ portName: string
 
 deviceID: array(int)
 
- 
-
 INPUT:
 
 ``` language-json

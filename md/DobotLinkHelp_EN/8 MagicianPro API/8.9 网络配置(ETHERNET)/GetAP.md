@@ -6,8 +6,6 @@ ssid : string
 
 passwd : string
 
- 
-
 INPUT:
 
 ``` language-json
@@ -20,8 +18,6 @@ INPUT:
     }
 }
 ```
-
- 
 
 OUTPUT:
 

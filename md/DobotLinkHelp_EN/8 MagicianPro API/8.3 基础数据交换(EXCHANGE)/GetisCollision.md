@@ -6,8 +6,6 @@ portName: string
 
 value: int (0/1),0未发生碰撞，1发生碰撞
 
- 
-
 INPUT:
 
 ``` language-json

@@ -10,8 +10,6 @@ y: float(横移速度)cm/s
 
 r: float(旋转速度)deg/s
 
- 
-
 INPUT:
 
 ``` language-json
@@ -23,7 +21,7 @@ INPUT:
         "portName": "COM4",
         "x": 10.0,
         "y": 10.0,
-        "r": 10.0 
+        "r": 10.0
     }
 }
 ```

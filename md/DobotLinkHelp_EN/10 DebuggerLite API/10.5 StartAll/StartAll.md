@@ -1,7 +1,5 @@
 **Description: 启动所有脚本进程**
 
- 
-
 INPUT:
 
 ``` language-json
@@ -12,8 +10,6 @@ INPUT:
     "params": {}
 }
 ```
-
- 
 
 OUTPUT:
 

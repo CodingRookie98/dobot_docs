@@ -6,8 +6,6 @@ portName: string
 
 data: object
 
- 
-
 INPUT:
 
 ``` language-json
@@ -19,7 +17,7 @@ INPUT:
         "portName": "192.168.1.6",
         "data": {
             "distance" : 0.1,
-            "angle" : 0.1 
+            "angle" : 0.1
         }
     }
 }

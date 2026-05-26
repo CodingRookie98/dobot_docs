@@ -8,8 +8,6 @@ path: string
 
 line: int
 
- 
-
 INPUT:
 
 ``` language-json

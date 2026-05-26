@@ -8,8 +8,6 @@ isEnable: int (是否使能角度闭环)
 
 angle: float (角度，°（-180-180）)
 
- 
-
 INPUT:
 
 ``` language-json

@@ -1,11 +1,11 @@
 功能:
 
-    获取当前安装状态  
+    获取当前安装状态
 
 INPUT:
 
 ``` language-json
- 
+
 {
     "id": 1,
     "jsonrpc": "2.0",
@@ -13,12 +13,10 @@ INPUT:
     "params": {
         "portName": "192.168.5.1"
     }
-} 
+}
 ```
 
 OUTPUT：
-
- 
 
 ``` language-json
 {

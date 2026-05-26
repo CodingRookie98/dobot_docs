@@ -4,8 +4,6 @@ portName: string
 
 value: array (\[j1, j2, j3, j4, j5, j6\])
 
- 
-
 INPUT:
 
 ``` language-json

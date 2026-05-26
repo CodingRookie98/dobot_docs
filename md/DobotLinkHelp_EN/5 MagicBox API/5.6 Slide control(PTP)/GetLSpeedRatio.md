@@ -6,8 +6,6 @@ type: int (0:JOG 1:PTP)
 
 value: int (0~100 unit:%)
 
- 
-
 INPUT:
 
 ``` language-json

@@ -6,8 +6,6 @@ portName: string
 
 folderName: string
 
- 
-
 INPUT:
 
 ``` language-json
@@ -22,15 +20,13 @@ INPUT:
 }
 ```
 
- 
-
 OUTPUT:
 
 ``` language-json
 {
     "id": 1,
     "jsonrpc": "2.0",
-    "result": { 
+    "result": {
                "a.lua": "2020-11-18 18:00:24",
                "src0.lua": "2021-03-09 09:51:57"
      }

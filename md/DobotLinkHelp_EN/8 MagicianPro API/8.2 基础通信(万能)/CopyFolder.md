@@ -10,8 +10,6 @@ folderName: string（原来的文件名）
 
 newfolderName: string（复制后的文件名）
 
- 
-
 INPUT:
 
 ``` language-json

@@ -3,19 +3,18 @@
 INPUT:
 
 ``` language-json
-{   
-    "id": 1,    
+{
+    "id": 1,
 
-    "jsonrpc": "2.0",    
+    "jsonrpc": "2.0",
 
     "method": "dobotlink.Magician.GetAngleSensorCoef",
 
-    "params": {       
+    "params": {
 
          "portName": "192.168.5.1"
 
       }
-
 
 }
 ```
@@ -23,10 +22,10 @@ INPUT:
 OUTPUT：
 
 ``` language-json
-{    
-    "id": 1,    
+{
+    "id": 1,
     "jsonrpc": "2.0",
-    "result":{        
+    "result":{
         "rearArmAngle": 0.9707000255584717,
         "frontArmAngle":0.9922999739646912
 

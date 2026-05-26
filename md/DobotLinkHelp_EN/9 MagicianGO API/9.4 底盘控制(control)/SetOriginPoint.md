@@ -6,8 +6,6 @@ portName: string
 
 enable: int
 
- 
-
 INPUT:
 
 ``` language-json

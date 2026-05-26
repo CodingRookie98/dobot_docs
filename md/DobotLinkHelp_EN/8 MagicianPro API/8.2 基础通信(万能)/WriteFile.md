@@ -8,8 +8,6 @@ content: object/string
 
 url: string (if url is null, it will not send post request)
 
- 
-
 INPUT:
 
 ``` language-json

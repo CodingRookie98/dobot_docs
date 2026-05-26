@@ -8,8 +8,6 @@ velocity: List\<float\>
 
 acceleration: List\<float\>
 
- 
-
 INPUT:
 
 ``` language-json
@@ -22,7 +20,7 @@ INPUT:
         "data": {
             "velocity": [100.0, 100.0, 100.0, 100.0],
             "acceleration": [100.0, 100.0, 100.0, 100.0]
-        }    
+        }
     }
 }
 ```

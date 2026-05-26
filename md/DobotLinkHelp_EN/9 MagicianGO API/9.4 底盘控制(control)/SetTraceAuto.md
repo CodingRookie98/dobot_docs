@@ -8,8 +8,6 @@ isTrace: int
 
 type: int
 
- 
-
 INPUT:
 
 ``` language-json
@@ -19,7 +17,7 @@ INPUT:
     "method": "dobotlink.MagicianGO.SetTraceAuto",
     "params": {
         "portName": "COM4",
-        "isTrace": 1 
+        "isTrace": 1
     }
 }
 ```

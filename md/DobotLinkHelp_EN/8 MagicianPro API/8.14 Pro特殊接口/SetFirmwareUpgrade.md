@@ -8,8 +8,6 @@ type: string
 
 index: int
 
- 
-
 INPUT:
 
 ``` language-json

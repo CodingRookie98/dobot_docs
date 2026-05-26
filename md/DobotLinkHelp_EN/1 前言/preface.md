@@ -1,8 +1,8 @@
 **Brief introduction**
 
-<span style="FONT-SIZE: 10.5pt; FONT-FAMILY: Calibri; mso-spacerun: 'yes'; mso-fareast-font-family: 宋体; mso-bidi-font-family: 'Times New Roman'; mso-font-kerning: 1.0000pt"></span> 
+<span style="FONT-SIZE: 10.5pt; FONT-FAMILY: Calibri; mso-spacerun: 'yes'; mso-fareast-font-family: 宋体; mso-bidi-font-family: 'Times New Roman'; mso-font-kerning: 1.0000pt"></span>
 
-<span style="FONT-SIZE: 10.5pt; FONT-FAMILY: Calibri; mso-spacerun: 'yes'; mso-fareast-font-family: 宋体; mso-bidi-font-family: 'Times New Roman'; mso-font-kerning: 1.0000pt"> 
+<span style="FONT-SIZE: 10.5pt; FONT-FAMILY: Calibri; mso-spacerun: 'yes'; mso-fareast-font-family: 宋体; mso-bidi-font-family: 'Times New Roman'; mso-font-kerning: 1.0000pt">
 DobotLink is an intermediate service layer for the communication between
 hardware equipment and host computer (DobotLab or other development
 environment). All external software control Dobot\'s hardware equipment
@@ -11,13 +11,13 @@ Go, etc. DobotLink not only includes API dynamic library, but also
 supports firmware update, device verification and other functions of
 equipment.</span>
 
-<span style="FONT-SIZE: 10.5pt; FONT-FAMILY: Calibri; mso-spacerun: 'yes'; mso-fareast-font-family: 宋体; mso-bidi-font-family: 'Times New Roman'; mso-font-kerning: 1.0000pt"></span> 
+<span style="FONT-SIZE: 10.5pt; FONT-FAMILY: Calibri; mso-spacerun: 'yes'; mso-fareast-font-family: 宋体; mso-bidi-font-family: 'Times New Roman'; mso-font-kerning: 1.0000pt"></span>
 
 **Protocol description**
 
 <span style="FONT-SIZE: 10.5pt; FONT-FAMILY: Calibri; mso-spacerun: 'yes'; mso-fareast-font-family: 宋体; mso-bidi-font-family: 'Times New Roman'; mso-font-kerning: 1.0000pt"></span>
 
-<span style="FONT-SIZE: 10.5pt; FONT-FAMILY: Calibri; mso-spacerun: 'yes'; mso-fareast-font-family: 宋体; mso-bidi-font-family: 'Times New Roman'; mso-font-kerning: 1.0000pt"></span> 
+<span style="FONT-SIZE: 10.5pt; FONT-FAMILY: Calibri; mso-spacerun: 'yes'; mso-fareast-font-family: 宋体; mso-bidi-font-family: 'Times New Roman'; mso-font-kerning: 1.0000pt"></span>
 
 <span style="FONT-SIZE: 10.5pt; FONT-FAMILY: Calibri; mso-spacerun: 'yes'; mso-fareast-font-family: 宋体; mso-bidi-font-family: 'Times New Roman'; mso-font-kerning: 1.0000pt">
 This protocol describes the data format in which the client interacts
@@ -25,7 +25,7 @@ with DobotLink. DobotLink sends instructions to the device through the
 interface, and the device returns the response result after running the
 instructions.</span>
 
-<span style="FONT-SIZE: 10.5pt; FONT-FAMILY: Calibri; mso-spacerun: 'yes'; mso-fareast-font-family: 宋体; mso-bidi-font-family: 'Times New Roman'; mso-font-kerning: 1.0000pt"></span> 
+<span style="FONT-SIZE: 10.5pt; FONT-FAMILY: Calibri; mso-spacerun: 'yes'; mso-fareast-font-family: 宋体; mso-bidi-font-family: 'Times New Roman'; mso-font-kerning: 1.0000pt"></span>
 
 DobotLink, as the server, uses websocket communication, and the
 listening port is 9090
@@ -66,32 +66,32 @@ response data
 
 Get red and blue button sensor status
 
-Request   
-{  
-    \"id\": 1,  
-    \"jsonrpc\": \"2.0\",  
-    \"method\": \"dobotlink.MagicBox.GetButtonStatus\",  
-    \"params\": {  
-        \"port\": 0,  
-        \"portName\": \"COM4\"  
-    }  
+Request
+{
+    \"id\": 1,
+    \"jsonrpc\": \"2.0\",
+    \"method\": \"dobotlink.MagicBox.GetButtonStatus\",
+    \"params\": {
+        \"port\": 0,
+        \"portName\": \"COM4\"
+    }
 }
 
-Response  
-{  
-    \"id\": 1,  
-    \"jsonrpc\": \"2.0\",  
-    \"result\": {  
-        \"blueBtn\": 1,  
-        \"redBtn\": 1  
-    }  
+Response
+{
+    \"id\": 1,
+    \"jsonrpc\": \"2.0\",
+    \"result\": {
+        \"blueBtn\": 1,
+        \"redBtn\": 1
+    }
 }
 
 <span style="FONT-SIZE: 10.5pt; FONT-FAMILY: 宋体; mso-spacerun: 'yes'; mso-bidi-font-family: 'Times New Roman'; mso-font-kerning: 1.0000pt; mso-ascii-font-family: Calibri; mso-hansi-font-family: Calibri">
 **matters needing attention**</span>
 
 <span style="FONT-SIZE: 10.5pt; FONT-FAMILY: 宋体; mso-spacerun: 'yes'; mso-bidi-font-family: 'Times New Roman'; mso-font-kerning: 1.0000pt; mso-ascii-font-family: Calibri; mso-hansi-font-family: Calibri">
-</span> 
+</span>
 
 <span style="FONT-SIZE: 10.5pt; FONT-FAMILY: 宋体; mso-spacerun: 'yes'; mso-bidi-font-family: 'Times New Roman'; mso-font-kerning: 1.0000pt; mso-ascii-font-family: Calibri; mso-hansi-font-family: Calibri">
 DobotLink needs to be installed to connect and use Dobot hardware
@@ -113,8 +113,6 @@ interface document
 
 <span style="FONT-SIZE: 10.5pt; FONT-FAMILY: 宋体; mso-spacerun: 'yes'; mso-bidi-font-family: 'Times New Roman'; mso-font-kerning: 1.0000pt; mso-ascii-font-family: Calibri; mso-hansi-font-family: Calibri">
 </span>
-
- 
 
 <table class="MsoTableGrid"
 style="BORDER-TOP: medium none; BORDER-RIGHT: medium none; WIDTH: 426pt; BORDER-COLLAPSE: collapse; BORDER-BOTTOM: medium none; BORDER-LEFT: medium none; mso-table-layout-alt: fixed; mso-border-left-alt: 0.5000pt solid windowtext; mso-border-top-alt: 0.5000pt solid windowtext; mso-border-right-alt: 0.5000pt solid windowtext; mso-border-bottom-alt: 0.5000pt solid windowtext; mso-border-insideh: 0.5000pt solid windowtext; mso-border-insidev: 0.5000pt solid windowtext; mso-padding-alt: 0.0000pt 5.4000pt 0.0000pt 5.4000pt"
@@ -225,10 +223,6 @@ style="FONT-SIZE: 10.5pt; FONT-FAMILY: Calibri; mso-fareast-font-family: 宋体;
 </tr>
 </tbody>
 </table>
-
- 
-
- 
 
 <span style="FONT-SIZE: 10.5pt; FONT-FAMILY: 宋体; mso-spacerun: 'yes'; mso-bidi-font-family: 'Times New Roman'; mso-font-kerning: 1.0000pt; mso-ascii-font-family: Calibri; mso-hansi-font-family: Calibri">
 </span>

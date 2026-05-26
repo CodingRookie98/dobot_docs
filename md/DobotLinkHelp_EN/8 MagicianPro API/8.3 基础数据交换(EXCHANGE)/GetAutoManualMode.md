@@ -4,8 +4,6 @@ portName: string
 
 value: string (\'auto\', \'manual\')
 
- 
-
 INPUT:
 
 ``` language-json

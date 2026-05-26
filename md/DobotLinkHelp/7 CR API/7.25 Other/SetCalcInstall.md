@@ -10,7 +10,6 @@ INPUT:
 "data":{"cartesianCoord":[x,y,z,a,b,c]}
  }
 }
-  
 
 ```
 :::
@@ -18,7 +17,7 @@ INPUT:
 OUTPUT：
 
 ```json
-  
+
 {
  "id": 1,
  "jsonrpc": "2.0",

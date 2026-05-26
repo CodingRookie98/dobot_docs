@@ -8,8 +8,6 @@ isEnable: int (0:STOP 1:START)
 
 name: String
 
- 
-
 INPUT:
 
 ``` language-json

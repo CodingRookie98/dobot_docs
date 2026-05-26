@@ -8,8 +8,6 @@ april_list: string, 九个图像坐标
 
 device_list: string, 九个机械臂坐标
 
- 
-
 INPUT:
 
 ``` language-json
@@ -24,8 +22,6 @@ INPUT:
     }
 }
 ```
-
- 
 
 OUTPUT:
 

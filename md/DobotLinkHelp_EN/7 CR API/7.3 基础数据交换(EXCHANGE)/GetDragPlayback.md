@@ -2,9 +2,6 @@
 
 获取exchange接口中的 dragPlayback 字段
 
- 
-
-  
 INPUT:
 
 ``` language-json
@@ -14,7 +11,7 @@ INPUT:
 
      "jsonrpc": "2.0",
 
-     "method": "dobotlink.CR.GetDragPlayback", 
+     "method": "dobotlink.CR.GetDragPlayback",
      "params": {
         "portName": "192.168.5.1"
 
@@ -22,8 +19,6 @@ INPUT:
 }
 
 ```
-
- 
 
 OUTPUT：
 

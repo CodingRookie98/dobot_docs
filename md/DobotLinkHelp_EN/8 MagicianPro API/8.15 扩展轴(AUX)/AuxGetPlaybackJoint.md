@@ -10,8 +10,6 @@ acceleration : List\<float\>
 
 jerk: List\<float\>
 
- 
-
 INPUT:
 
 ``` language-json
@@ -32,7 +30,7 @@ OUTPUT:
     "id": 1,
     "jsonrpc": "2.0",
     "result": {
-        "velocity": [100.0, 100.0, 100.0,100.0], 
+        "velocity": [100.0, 100.0, 100.0,100.0],
         "acceleration": [100.0, 100.0, 100.0,100.0],
         "jerk": [100.0, 100.0, 100.0, 100.0]
     }

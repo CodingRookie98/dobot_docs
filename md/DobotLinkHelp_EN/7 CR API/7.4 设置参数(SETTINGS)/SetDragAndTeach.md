@@ -1,7 +1,5 @@
 功能: 拖拽示教
 
- 
-
 INPUT:
 
 ``` language-json

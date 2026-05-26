@@ -12,8 +12,6 @@ left: int
 
 right: int
 
- 
-
 INPUT:
 
 ``` language-json
@@ -22,7 +20,7 @@ INPUT:
     "jsonrpc": "2.0",
     "method": "dobotlink.MagicianGO.GetUltrasoundData",
     "params": {
-        "portName": "COM4" 
+        "portName": "COM4"
     }
 }
 ```

@@ -4,8 +4,6 @@
 
 portName: string
 
- 
-
 INPUT:
 
 ``` language-json
@@ -18,8 +16,6 @@ INPUT:
     }
 }
 ```
-
- 
 
 OUTPUT:
 
@@ -48,6 +44,6 @@ OUTPUT:
         }
     }
      ]
- 
+
 }
 ```

@@ -4,8 +4,6 @@
 
 portName: string
 
- 
-
 INPUT:
 
 ``` language-json
@@ -14,12 +12,10 @@ INPUT:
     "jsonrpc": "2.0",
     "method": "dobotlink.MagicianPro.GetPallet",
     "params": {
-        "portName": "192.168.1.6" 
+        "portName": "192.168.1.6"
     }
 }
 ```
-
- 
 
 OUTPUT:
 
@@ -28,7 +24,7 @@ OUTPUT:
     "id": 1,
     "jsonrpc": "2.0",
     "result": {
-             [ 
+             [
                {
                  "count": {
                         "x": 3,

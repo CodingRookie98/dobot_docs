@@ -2,8 +2,6 @@
 
  协作运动接口,用于获取当前的运动状态
 
- 
-
 INPUT:
 
 ``` language-json
@@ -18,13 +16,11 @@ INPUT:
 
       "params": {
 
-        "portName": "192.168.5.1" 
+        "portName": "192.168.5.1"
     }
 
 }
 ```
-
- 
 
 OUTPUT：
 

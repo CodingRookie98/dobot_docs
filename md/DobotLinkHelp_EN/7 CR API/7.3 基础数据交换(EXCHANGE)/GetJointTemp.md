@@ -1,6 +1,6 @@
 功能:
 
-   获取exchange接口中的 jointTemp 字段  
+   获取exchange接口中的 jointTemp 字段
 
 INPUT:
 
@@ -20,8 +20,6 @@ INPUT:
      }
 }
 ```
-
- 
 
 OUTPUT：
 

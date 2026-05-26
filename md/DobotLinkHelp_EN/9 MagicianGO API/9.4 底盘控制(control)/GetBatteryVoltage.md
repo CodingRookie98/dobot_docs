@@ -8,8 +8,6 @@ PowerVoltage: float （电池电压）
 
 PowerPercentage: float （电量）
 
- 
-
 INPUT:
 
 ``` language-json
@@ -22,8 +20,6 @@ INPUT:
     }
 }
 ```
-
- 
 
 OUTPUT:
 

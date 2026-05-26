@@ -12,8 +12,6 @@ ControllerVersion: string
 
 ServoVersion: string
 
- 
-
 INPUT:
 
 ``` language-json

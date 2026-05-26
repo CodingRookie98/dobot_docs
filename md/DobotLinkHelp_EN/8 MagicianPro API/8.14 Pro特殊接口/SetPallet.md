@@ -6,8 +6,6 @@ portName: string
 
 data: list, 托盘数据为列表
 
- 
-
 INPUT:
 
 ``` language-json
@@ -17,7 +15,7 @@ INPUT:
     "method": "dobotlink.MagicianPro.SetPallet",
     "params": {
         "portName": "192.168.1.6",
-        "data": [ 
+        "data": [
                {
                  "count": {
                         "x": 3,

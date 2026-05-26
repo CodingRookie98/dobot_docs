@@ -4,8 +4,6 @@
 
 angle: int
 
- 
-
 INPUT:
 
 ``` language-json

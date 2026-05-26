@@ -6,8 +6,6 @@ portName: string
 
 isHappened: int
 
- 
-
 INPUT:
 
 ``` language-json

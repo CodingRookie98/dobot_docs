@@ -12,8 +12,6 @@ minorVersion: int
 
 majorVersion: int
 
- 
-
 INPUT:
 
 ``` language-json
@@ -22,12 +20,10 @@ INPUT:
     "jsonrpc": "2.0",
     "method": "dobotlink.MagicianGO.GetDeviceFwHardwareVersion",
     "params": {
-        "portName": "COM4" 
+        "portName": "COM4"
     }
 }
 ```
-
- 
 
 OUTPUT:
 

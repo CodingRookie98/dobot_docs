@@ -6,8 +6,6 @@ portName: string
 
 \*queueClear: bool (default:true)
 
- 
-
 INPUT:
 
 ``` language-json

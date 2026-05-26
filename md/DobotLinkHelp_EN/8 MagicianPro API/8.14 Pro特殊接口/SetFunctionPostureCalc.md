@@ -12,8 +12,6 @@ user: int
 
 rawData: list
 
- 
-
 INPUT:
 
 ``` language-json
@@ -32,8 +30,6 @@ INPUT:
     }
 }
 ```
-
- 
 
 OUTPUT:
 

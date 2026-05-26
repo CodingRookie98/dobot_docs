@@ -12,8 +12,6 @@ Vx: float(前进速度)cm/s
 
 Vx: float(横移速度)cm/s
 
- 
-
 INPUT:
 
 ``` language-json
@@ -26,7 +24,7 @@ INPUT:
         "x": 10.0,
         "y": 10.0,
         "Vx": 10.0,
-        "Vy": 10.0 
+        "Vy": 10.0
     }
 }
 ```

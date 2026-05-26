@@ -14,8 +14,6 @@ angle: float（小车绕圆弧转动角度）(deg/s)
 mode: int(选择绕圆弧轨迹行走的模式，取值\[1, 2\]，
 1-切向运动，2-刷锅运动)
 
- 
-
 INPUT:
 
 ``` language-json

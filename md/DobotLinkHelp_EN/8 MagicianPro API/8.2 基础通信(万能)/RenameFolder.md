@@ -8,8 +8,6 @@ folderName: string（原来的文件名）
 
 newfolderName: string（新的文件名）
 
- 
-
 INPUT:
 
 ``` language-json

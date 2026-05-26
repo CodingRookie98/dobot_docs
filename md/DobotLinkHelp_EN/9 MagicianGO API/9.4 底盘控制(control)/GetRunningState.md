@@ -7,8 +7,6 @@ portName: string
 
 timeout: int (ms )
 
- 
-
 INPUT:
 
 ``` language-json
@@ -18,7 +16,7 @@ INPUT:
     "method": "dobotlink.MagicianGO.SetCommuTimeout",
     "params": {
         "portName": "COM4",
-        "timeout": 10000 
+        "timeout": 10000
     }
 }
 ```

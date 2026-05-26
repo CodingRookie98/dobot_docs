@@ -1,7 +1,5 @@
 **Description: 获取脚本进程状态**
 
- 
-
 INPUT:
 
 ``` language-json
@@ -12,8 +10,6 @@ INPUT:
     "params": {}
 }
 ```
-
- 
 
 OUTPUT:
 

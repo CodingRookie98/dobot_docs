@@ -8,8 +8,6 @@ value: int (0~100 unit:%)
 
 \*isQueued: bool (default:false)
 
- 
-
 INPUT:
 
 ``` language-json

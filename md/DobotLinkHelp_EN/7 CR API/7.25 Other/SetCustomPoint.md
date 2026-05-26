@@ -2,8 +2,6 @@
 
 设置初始姿态
 
- 
-
 INPUT:
 
 ``` language-json
@@ -20,7 +18,6 @@ INPUT:
         "data": {"joint":[0.0,0.0,0.0,0.0,0.0,0.0]}
     }
 
-
 }
 ```
 
@@ -32,9 +29,8 @@ OUTPUT：
 
       "id": 1,
 
-
-    "jsonrpc": 
-"2.0", 
+    "jsonrpc":
+"2.0",
     "result": true
 }
 ```

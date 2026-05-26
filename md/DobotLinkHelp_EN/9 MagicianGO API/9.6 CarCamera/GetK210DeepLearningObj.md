@@ -6,8 +6,6 @@ portName: string
 
 angle: int
 
- 
-
 INPUT:
 
 ``` language-json
@@ -20,8 +18,6 @@ INPUT:
     }
 }
 ```
-
- 
 
 OUTPUT:
 
@@ -47,7 +43,7 @@ OUTPUT:
             "id" : 2 //类型
              }
     ]
-       
+
     }
 }
 ```

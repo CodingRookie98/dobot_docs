@@ -8,8 +8,6 @@ mode: string, 模式
 
 name: string, 名字
 
- 
-
 INPUT:
 
 ``` language-json

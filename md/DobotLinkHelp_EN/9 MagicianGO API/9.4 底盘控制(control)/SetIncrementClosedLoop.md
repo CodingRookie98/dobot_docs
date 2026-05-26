@@ -10,8 +10,6 @@ y: float(位移增量, cm)
 
 angle: float(位移增量, °（-180-180）)
 
- 
-
 INPUT:
 
 ``` language-json
@@ -23,7 +21,7 @@ INPUT:
         "portName": "COM4" ,
         "x": 10.0,
         "y": 10.0,
-        "angle": 10.0 
+        "angle": 10.0
     }
 }
 ```

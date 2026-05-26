@@ -8,8 +8,6 @@ data: object
 
 value: bool
 
- 
-
 INPUT:
 
 ``` language-json
@@ -18,12 +16,10 @@ INPUT:
     "jsonrpc": "2.0",
     "method": "dobotlink.MagicianPro.GetCollisionDetect",
     "params": {
-        "portName": "192.168.1.6" 
+        "portName": "192.168.1.6"
     }
 }
 ```
-
- 
 
 OUTPUT:
 
@@ -32,7 +28,7 @@ OUTPUT:
     "id": 1,
     "jsonrpc": "2.0",
     "result": {
-      
+
          "Level": 2,
          "Level1": [
             30,
@@ -76,7 +72,7 @@ OUTPUT:
         ],
        "mode": 0,
        "value": false
- 
+
     }
 }
 ```

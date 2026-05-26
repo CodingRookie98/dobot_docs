@@ -6,8 +6,6 @@ portName: string
 
 isEnableCali: int, 校准模式设置，0关闭校准；1开启校准
 
- 
-
 INPUT:
 
 ``` language-json

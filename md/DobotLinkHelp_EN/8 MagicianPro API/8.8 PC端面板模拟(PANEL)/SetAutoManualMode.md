@@ -8,8 +8,6 @@ data: object
 
 value: string
 
- 
-
 INPUT:
 
 ``` language-json
@@ -21,7 +19,7 @@ INPUT:
         "portName": "192.168.5.1",
         "data": {
             "value": "auto"/"manual"
-        }    
+        }
     }
 }
 ```

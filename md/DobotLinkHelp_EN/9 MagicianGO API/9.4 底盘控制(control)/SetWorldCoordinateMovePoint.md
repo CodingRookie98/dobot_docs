@@ -10,8 +10,6 @@ y: （目标点y坐标）float(cm)
 
 s: （速度）float(0-100)cm/s
 
- 
-
 INPUT:
 
 ``` language-json

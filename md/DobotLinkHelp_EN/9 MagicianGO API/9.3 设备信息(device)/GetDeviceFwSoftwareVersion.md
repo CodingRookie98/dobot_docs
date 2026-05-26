@@ -12,8 +12,6 @@ minorVersion: int
 
 majorVersion: int
 
- 
-
 INPUT:
 
 ``` language-json
@@ -26,8 +24,6 @@ INPUT:
     }
 }
 ```
-
- 
 
 OUTPUT:
 

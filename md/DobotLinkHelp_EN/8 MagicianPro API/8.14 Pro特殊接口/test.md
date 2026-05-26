@@ -4,8 +4,6 @@
 
 portName: string
 
- 
-
 INPUT:
 
 ``` language-json
@@ -14,12 +12,10 @@ INPUT:
     "jsonrpc": "2.0",
     "method": "dobotlink.MagicianPro.GetFunctionScriptParams",
     "params": {
-        "portName": "192.168.1.6" 
+        "portName": "192.168.1.6"
     }
 }
 ```
-
- 
 
 OUTPUT:
 
@@ -33,7 +29,7 @@ OUTPUT:
             "archEnd": 9.0,
             "archStart": 8.0,
             "archZLimit": 87.0,
-            "speedJ": 47.0, 
+            "speedJ": 47.0,
             "speedL": 74.0
     }
 }

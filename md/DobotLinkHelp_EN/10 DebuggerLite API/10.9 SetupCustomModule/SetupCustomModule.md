@@ -6,8 +6,6 @@ fileName: int，文件名
 
 fileContext: int，base64转码后的文件内容
 
- 
-
 INPUT:
 
 ``` language-json

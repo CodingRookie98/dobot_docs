@@ -1,8 +1,6 @@
 功能:
 
- 获取打包姿态（打包姿态）  
-  
-  
+ 获取打包姿态（打包姿态）
 
 INPUT:
 
@@ -13,8 +11,7 @@ INPUT:
 
       "jsonrpc": "2.0",
 
-
-    "method": "dobotlink.CR.GetPackPoint", 
+    "method": "dobotlink.CR.GetPackPoint",
     "params": {
 
         "portName": "192.168.5.1"

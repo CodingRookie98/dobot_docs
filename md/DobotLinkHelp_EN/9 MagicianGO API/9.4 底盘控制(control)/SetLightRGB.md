@@ -19,8 +19,6 @@ cycle: float （周期（单位s）（如果是定时熄灭模式代表亮的时
 
 counts: int （次数：闪烁烁模式有效 -1：无限次， 1：1次，2：2次\... ）
 
- 
-
 INPUT:
 
 ``` language-json

@@ -8,8 +8,6 @@ data: object
 
 value: bool
 
- 
-
 INPUT:
 
 ``` language-json
@@ -21,7 +19,7 @@ INPUT:
         "portName": "192.168.1.6",
         "data": {
             "value": true/false
-        }    
+        }
     }
 }
 ```

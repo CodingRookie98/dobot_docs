@@ -1,7 +1,6 @@
 功能:
 
-获取jump速度参数  
-  
+获取jump速度参数
 
 INPUT:
 
@@ -14,9 +13,8 @@ INPUT:
 
       "method": "dobotlink.CR.GetJumpStructure",
 
-
-    "params": 
-{ 
+    "params":
+{
         "portName": "192.168.5.1"
     }
 }

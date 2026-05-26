@@ -6,8 +6,6 @@ portName: string
 
 warning: array
 
- 
-
 INPUT:
 
 ``` language-json

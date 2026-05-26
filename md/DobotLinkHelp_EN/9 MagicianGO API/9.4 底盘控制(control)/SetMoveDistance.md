@@ -8,8 +8,6 @@ r: float(旋转角度）deg
 
 Vr: float(旋转速度）deg/s
 
- 
-
 INPUT:
 
 ``` language-json
@@ -20,7 +18,7 @@ INPUT:
     "params": {
         "portName": "COM4",
         "r": 100.0 ,
-        "Vr": 10.0 
+        "Vr": 10.0
     }
 }
 ```

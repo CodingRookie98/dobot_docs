@@ -8,8 +8,6 @@ data: object
 
 Level: int (等级设置1~5)
 
- 
-
 INPUT:
 
 ``` language-json

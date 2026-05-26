@@ -6,8 +6,6 @@ enable: bool
 
 outputs: array
 
- 
-
 INPUT:
 
 ``` language-json

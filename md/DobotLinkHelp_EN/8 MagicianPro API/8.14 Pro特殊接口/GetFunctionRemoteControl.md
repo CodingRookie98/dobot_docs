@@ -4,8 +4,6 @@
 
 portName: string
 
- 
-
 INPUT:
 
 ``` language-json
@@ -14,7 +12,7 @@ INPUT:
     "jsonrpc": "2.0",
     "method": "dobotlink.MagicianPro.GetFunctionRemoteControl",
     "params": {
-        "portName": "192.168.1.6" 
+        "portName": "192.168.1.6"
     }
 }
 ```

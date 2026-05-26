@@ -20,9 +20,8 @@ INPUT:
 
       "globalHold": true, --是否全局保持
 
-
-    "value": 20 
---int类型 
+    "value": 20
+--int类型
    },
    "var2": {
     "globalHold": false, --是否全局保持
@@ -63,7 +62,6 @@ INPUT:
     }
 
     }
-
 
     }
 

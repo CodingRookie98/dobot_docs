@@ -1,7 +1,5 @@
 **Description: 结束所有进程**
 
- 
-
 INPUT:
 
 ``` language-json
@@ -12,8 +10,6 @@ INPUT:
     "params": {}
 }
 ```
-
- 
 
 OUTPUT:
 

@@ -6,8 +6,6 @@ portName: string
 
 data: object
 
- 
-
 INPUT:
 
 ``` language-json
@@ -29,10 +27,6 @@ INPUT:
  }
 }
 ```
-
- 
-
- 
 
 OUTPUT:
 

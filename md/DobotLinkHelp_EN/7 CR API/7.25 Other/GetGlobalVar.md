@@ -24,8 +24,7 @@ OUTPUT：
 
     "jsonrpc": "2.0",
 
-    "result": {globalVar.json文件内容????} 
-
+    "result": {globalVar.json文件内容????}
 
  }
 ```

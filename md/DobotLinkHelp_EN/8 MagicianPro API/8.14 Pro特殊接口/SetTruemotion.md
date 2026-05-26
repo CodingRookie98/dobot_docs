@@ -6,8 +6,6 @@ portName: string
 
 UsingTrueMotion: bool
 
- 
-
 INPUT:
 
 ``` language-json

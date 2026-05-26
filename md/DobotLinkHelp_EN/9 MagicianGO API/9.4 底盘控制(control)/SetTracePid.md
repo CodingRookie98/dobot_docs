@@ -10,8 +10,6 @@ i: float (巡线i值)
 
 d: float (巡线d值)
 
- 
-
 INPUT:
 
 ``` language-json
@@ -21,9 +19,9 @@ INPUT:
     "method": "dobotlink.MagicianGO.SetTracePid",
     "params": {
         "portName": "COM4",
-        "p": 10.0, 
+        "p": 10.0,
         "i": 10.0,
-        "d": 10.0 
+        "d": 10.0
     }
 }
 ```

@@ -13,8 +13,6 @@ tone: int （音调）（index
 
 beat: float （节拍）（index 2有效，单位秒）
 
- 
-
 INPUT:
 
 ``` language-json

@@ -4,8 +4,6 @@ portName: string
 
 data: object
 
- 
-
 INPUT:
 
 ``` language-json
@@ -19,8 +17,6 @@ INPUT:
 }
 ```
 
- 
-
 OUTPUT:
 
 ``` language-json
@@ -30,7 +26,7 @@ OUTPUT:
     "result": {
         "algs": "1.2.22",
         "control": "3.2.3.0",
-        "system": "1.0.0" 
+        "system": "1.0.0"
     }
 }
 ```

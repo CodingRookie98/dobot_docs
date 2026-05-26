@@ -4,8 +4,6 @@ portName: string
 
 mode: string (\'joint\', \'cartesian\')
 
- 
-
 INPUT:
 
 ``` language-json

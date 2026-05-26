@@ -5,8 +5,6 @@
 
 portName: string
 
- 
-
 INPUT:
 
 ``` language-json

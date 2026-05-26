@@ -4,8 +4,6 @@ portName: string
 
 status: string (connected, unconnected)
 
- 
-
 INPUT:
 
 ``` language-json

@@ -6,8 +6,6 @@ portName: string
 
 lineInfo: int
 
- 
-
 INPUT:
 
 ``` language-json
@@ -17,7 +15,7 @@ INPUT:
     "method": "dobotlink.MagicianGO.SetTraceLineInfo",
     "params": {
         "portName": "COM4",
-        "lineInfo": 1 
+        "lineInfo": 1
     }
 }
 ```

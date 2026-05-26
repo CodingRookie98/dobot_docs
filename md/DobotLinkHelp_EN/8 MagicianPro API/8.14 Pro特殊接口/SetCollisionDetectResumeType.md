@@ -8,8 +8,6 @@ data: object
 
 resumeType: int（0:正常恢复，1:等待5s自动恢复，2:外力恢复）
 
- 
-
 INPUT:
 
 ``` language-json

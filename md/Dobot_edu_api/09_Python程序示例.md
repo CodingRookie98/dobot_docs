@@ -1,13 +1,5 @@
 # Python 程序集成与应用示例
 
-
-                            
-
-    
-    
-                                
-                                
-                                
 ## Python Program Demo
 
 Demo 1: 控制机器人绘制一个正方形
@@ -17,7 +9,7 @@ Demo 1: 控制机器人绘制一个正方形
 from DobotEDU import *
 x = 250
 y = 0
-z = -47 
+z = -47
 #控制机器人末端门型运动至落笔点处
 m_lite.set_ptpcmd(0, x, y, z, 0)
 side = 30  #正方形的边长
@@ -44,22 +36,8 @@ m_lite.set_endeffector_suctioncup(False, False)  #关闭吸盘
 
 ```
 
-
-                                
-                                
-                            
-    
-
 ---
 
-
-                            
-
-    
-    
-                                
-                                
-                                
 ## 附录
 
 ### Dobot 硬件设备使用手册下载：
@@ -68,11 +46,4 @@ m_lite.set_endeffector_suctioncup(False, False)  #关闭吸盘
 
 您可前往越疆 资料下载中心 获取相关硬件设备的最新使用手册。
 
-
-                                
-                                
-                            
-    
-
 ---
-

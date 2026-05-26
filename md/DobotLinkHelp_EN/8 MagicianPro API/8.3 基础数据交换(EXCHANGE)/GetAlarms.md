@@ -5,8 +5,6 @@ portName: string
 value: array (\[\[id, id, id\], \[id\], \[id\], \[id\], \[id\], \[id\],
 \[id\]\])
 
- 
-
 INPUT:
 
 ``` language-json

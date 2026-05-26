@@ -4,8 +4,6 @@ portName: string
 
 mode: string (\'jog\', \'step\')
 
- 
-
 INPUT:
 
 ``` language-json

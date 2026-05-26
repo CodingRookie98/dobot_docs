@@ -2,8 +2,6 @@
 
  协作运动接口,用于获取当前的运动状态
 
- 
-
 INPUT:
 
 ``` language-json

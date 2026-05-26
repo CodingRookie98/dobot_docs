@@ -2,13 +2,10 @@
 
 获取exchange接口中的 dragPlayback 字段
 
- 
-
-  
 INPUT:
 
 ``` language-json
- 
+
  {
     "id": 1,
     "jsonrpc": "2.0",
@@ -18,10 +15,8 @@ INPUT:
 
     }
 }
-             
-```
 
- 
+```
 
 OUTPUT：
 

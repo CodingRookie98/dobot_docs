@@ -8,8 +8,6 @@ posBtns: List\<bool\>
 
 negBtns: List\<bool\>
 
- 
-
 INPUT:
 
 ``` language-json
@@ -22,7 +20,7 @@ INPUT:
         "data": {
             "posBtns": [true, flase, flase, flase, flase, flase],
             "negBtns": [false, flase, flase, flase, flase, flase]
-        }    
+        }
     }
 }
 ```

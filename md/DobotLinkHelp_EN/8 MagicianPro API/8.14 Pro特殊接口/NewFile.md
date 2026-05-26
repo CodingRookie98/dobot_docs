@@ -8,8 +8,6 @@ fileName: string
 
 content: string
 
- 
-
 INPUT:
 
 ``` language-json

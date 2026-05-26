@@ -4,8 +4,6 @@
 
 portName: string
 
- 
-
 INPUT:
 
 ``` language-json
@@ -14,7 +12,7 @@ INPUT:
     "jsonrpc": "2.0",
     "method": "dobotlink.MagicianGO.SetCmdQueueForcelyStop",
     "params": {
-        "portName": "COM4" 
+        "portName": "COM4"
     }
 }
 ```

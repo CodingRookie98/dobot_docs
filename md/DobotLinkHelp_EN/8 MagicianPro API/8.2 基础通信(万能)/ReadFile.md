@@ -4,8 +4,6 @@ portName: string
 
 fileName: string
 
- 
-
 INPUT:
 
 ``` language-json

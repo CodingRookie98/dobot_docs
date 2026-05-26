@@ -2,8 +2,6 @@
 
 快捷键查询接口,用于第六轴末端的按钮控制
 
- 
-
 INPUT:
 
 ``` language-json
@@ -26,9 +24,8 @@ OUTPUT：
 
       "jsonrpc": "2.0",
 
-
-    "result": 
-{ 
+    "result":
+{
   "down": [17, 0, 18, 1],
   "downApi": "DO1_OFF_DO2_ON",
   "id": 3,

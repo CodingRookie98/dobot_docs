@@ -10,8 +10,6 @@ script: string，base64转码后的代码
 
 \*token: string，可选，使用EDU模块的时候用到
 
- 
-
 INPUT:
 
 ``` language-json

@@ -4,8 +4,6 @@ portName: string
 
 value: int (0~9)
 
- 
-
 INPUT:
 
 ``` language-json

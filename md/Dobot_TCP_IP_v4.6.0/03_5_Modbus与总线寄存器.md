@@ -506,4 +506,3 @@ ErrorID,{},SetOutputFloat(address,value);
 设置输出寄存器地址位2的float值为12.3。
 
 ---
-

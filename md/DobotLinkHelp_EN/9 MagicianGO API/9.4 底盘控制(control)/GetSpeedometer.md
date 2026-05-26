@@ -10,8 +10,6 @@ y: float(m)
 
 yam: float(°)
 
- 
-
 INPUT:
 
 ``` language-json

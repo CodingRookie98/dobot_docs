@@ -20,8 +20,6 @@ INPUT:
 
 OUTPUT：
 
- 
-
 ``` language-json
 {
     "id": 1,

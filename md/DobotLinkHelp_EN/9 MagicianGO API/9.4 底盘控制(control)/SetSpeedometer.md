@@ -10,8 +10,6 @@ y: float(小车y轴偏移坐标)cm
 
 yaw: float(小车航向角)°
 
- 
-
 INPUT:
 
 ``` language-json

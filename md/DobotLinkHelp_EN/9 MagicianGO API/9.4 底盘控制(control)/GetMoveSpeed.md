@@ -10,8 +10,6 @@ y: float(0-100)cm/s
 
 r: float(0-100)deg/s
 
- 
-
 INPUT:
 
 ``` language-json

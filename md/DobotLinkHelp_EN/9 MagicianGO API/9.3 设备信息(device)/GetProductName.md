@@ -6,8 +6,6 @@ portName: string
 
 productName: string
 
- 
-
 INPUT:
 
 ``` language-json

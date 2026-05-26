@@ -8,8 +8,6 @@ data: object
 
 project: string
 
- 
-
 INPUT:
 
 ``` language-json

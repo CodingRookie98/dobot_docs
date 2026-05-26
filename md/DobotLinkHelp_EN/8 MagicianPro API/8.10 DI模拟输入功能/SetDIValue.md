@@ -6,8 +6,6 @@ portName: string
 
 data: object
 
- 
-
 INPUT:
 
 ``` language-json
@@ -19,7 +17,7 @@ INPUT:
         "portName": "192.168.1.6",
         "data": {
             "index" : 10,
-            "value" : 0 
+            "value" : 0
         }
     }
 }
