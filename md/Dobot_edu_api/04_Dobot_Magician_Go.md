@@ -6,19 +6,16 @@
 
 ## 设置运行模式
 
--
-原型：
+- 原型：
 
 ```python
 go.set_running_mode(mode)
 
 ```
 
--
-描述：开启或关闭安全模式。
+- 描述：开启或关闭安全模式。
 
--
-必选参数：mode，运行模式。0：关闭安全模式；1：开启安全模式。
+- 必选参数：mode，运行模式。0：关闭安全模式；1：开启安全模式。
 
 - 返回：
 
@@ -26,8 +23,7 @@ go.set_running_mode(mode)
 
   - False： 指令未完成。
 
--
-示例
+- 示例
 
 ```python
 go.set_running_mode(mode=1)
@@ -40,19 +36,16 @@ go.set_running_mode(mode=1)
 
 ## 设置里程计数据
 
--
-原型：
+- 原型：
 
 ```python
 go.set_odometer_data(x,y,yaw)
 
 ```
 
--
-描述：设置Magician Go的里程计数据，即Magician Go的坐标及航向角。
+- 描述：设置Magician Go的里程计数据，即Magician Go的坐标及航向角。
 
--
-必选参数：
+- 必选参数：
 
   - x：X轴坐标，数据类型：float，单位：cm。
 
@@ -66,8 +59,7 @@ go.set_odometer_data(x,y,yaw)
 
   - False： 指令未完成。
 
--
-示例
+- 示例
 
 ```python
 go.set_odometer_data(x=0,y=0,yaw=0)
@@ -80,19 +72,16 @@ go.set_odometer_data(x=0,y=0,yaw=0)
 
 ## 设置平移方向和速度参数
 
--
-原型：
+- 原型：
 
 ```python
 go.set_move_speed_direct(direction,speed)
 
 ```
 
--
-描述：设置Magician Go的平移方向和速度参数。
+- 描述：设置Magician Go的平移方向和速度参数。
 
--
-必选参数：
+- 必选参数：
 
   -
 direction：Magician Go的平移方向，数据类型：float，取值范围：-180° ~ 180°。
@@ -108,8 +97,7 @@ speed：Magician Go的平移速度，数据类型：float，取值范围：0 ~ 1
 
   - False： 指令未完成。
 
--
-示例
+- 示例
 
 ```python
 go.set_move_speed_direct(direction=0,speed=20)
@@ -122,8 +110,7 @@ go.set_move_speed_direct(direction=0,speed=20)
 
 ## 设置移动速度参数
 
--
-原型：
+- 原型：
 
 ```python
 go.set_move_speed(x,y,r)
@@ -148,8 +135,7 @@ go.set_move_speed(x,y,r)
 
   - False： 指令未完成。
 
--
-示例
+- 示例
 
 ```python
 go.set_move_speed(x=10,y=0,r=0)
@@ -162,19 +148,16 @@ go.set_move_speed(x=10,y=0,r=0)
 
 ## 设置旋转角度和旋转速度参数
 
--
-原型：
+- 原型：
 
 ```python
 go.set_rotate(r,Vr)
 
 ```
 
--
-描述：设置Magician Go的旋转偏移角度和旋转速度。
+- 描述：设置Magician Go的旋转偏移角度和旋转速度。
 
--
-必选参数：
+- 必选参数：
 
   - r：Magician Go的旋转偏移角度，数据类型：float，单位：° (度)。
 其中，Magician Go的当前位置为0 °，角度为正值时，Magician Go逆时针方向旋转；角度为负值，Magician Go顺时针方向旋转。
@@ -187,8 +170,7 @@ go.set_rotate(r,Vr)
 
   - False： 指令未完成。
 
--
-示例
+- 示例
 
 ```python
 go.set_rotate(r=20,Vr=10)
@@ -201,34 +183,29 @@ go.set_rotate(r=20,Vr=10)
 
 ## 设置X轴Y轴移动距离及移动速度参数
 
--
-原型：
+- 原型：
 
 ```python
 go.set_move_dist(x,y,Vx,Vy)
 
 ```
 
--
-描述：设置Magician Go沿X轴的偏移距离和移动速度，以及沿Y轴的偏移距离和移动速度。Magician Go的X轴和Y轴方向如下图所示。
+- 描述：设置Magician Go沿X轴的偏移距离和移动速度，以及沿Y轴的偏移距离和移动速度。Magician Go的X轴和Y轴方向如下图所示。
 
 ---
 
 ## 移动到目标点
 
--
-原型：
+- 原型：
 
 ```python
 go.set_move_pos(x,y,s)
 
 ```
 
--
-描述：Magician Go以设置的速度移动到目标点。
+- 描述：Magician Go以设置的速度移动到目标点。
 
--
-必选参数：
+- 必选参数：
 
   - x：目标点的X轴坐标，数据类型：float，单位：cm。
 
@@ -242,8 +219,7 @@ go.set_move_pos(x,y,s)
 
   - False： 指令未完成。
 
--
-示例
+- 示例
 
 ```python
 go.set_move_pos(x=100,y=100,s=20)
@@ -256,8 +232,7 @@ Magician Go以20 cm/s的速度移动到目标点(100 cm,100 cm)。
 
 ## 以半径方式走圆弧轨迹
 
--
-原型：
+- 原型：
 
 ```python
 go.set_arc_rad(velocity,radius,angle,mode)
@@ -266,8 +241,7 @@ go.set_arc_rad(velocity,radius,angle,mode)
 
 - 描述：由Magician Go当前位置和半径确定圆形轨道，Magician Go从当前位置出发，沿着圆形轨道移动到目标角度。
 
--
-必选参数：
+- 必选参数：
 
   - velocity：Magician Go的圆弧运动速度，数据类型：float，单位：°/s，取值范围：0 ~ 100 °/s。
 
@@ -285,8 +259,7 @@ mode：圆弧运动的行走模式。
 
 ## 以圆心方式走圆弧轨迹
 
--
-原型：
+- 原型：
 
 ```python
 go.set_arc_cent(velocity,x, y,angle,mode)
@@ -295,8 +268,7 @@ go.set_arc_cent(velocity,x, y,angle,mode)
 
 - 描述：将Magician Go的车身中心作为原点，由Magician Go当前位置和圆心坐标确定圆形轨道，Magician Go从当前位置出发，沿着圆形轨道移动到目标角度。
 
--
-必选参数：
+- 必选参数：
 
   - velocity：Magician Go的圆弧运动速度，数据类型：float，单位：°/s，取值范围：0 ~ 100 °/s。
 
@@ -316,19 +288,16 @@ mode：圆弧运动的行走模式。
 
 ## 设置角度闭环
 
--
-原型：
+- 原型：
 
 ```python
 go.set_coord_closed_loop(isEnable,angle)
 
 ```
 
--
-描述：开启或关闭角度闭环功能，其中，角度闭环是指Magician Go在运动过程中保持固定的航向角。
+- 描述：开启或关闭角度闭环功能，其中，角度闭环是指Magician Go在运动过程中保持固定的航向角。
 
--
-必选参数：
+- 必选参数：
 
   - isEnable：角度闭环状态。0：关闭；1：开启。
 
@@ -340,8 +309,7 @@ go.set_coord_closed_loop(isEnable,angle)
 
   - False： 指令未完成。
 
--
-示例
+- 示例
 
 ```python
 go.set_coord_closed_loop(isEnable=1,angle=90)
@@ -354,19 +322,16 @@ go.set_coord_closed_loop(isEnable=1,angle=90)
 
 ## 设置编程灯状态
 
--
-原型：
+- 原型：
 
 ```python
 go.set_rgb_light(number,effect,r,g,b,cycle,counts)
 
 ```
 
--
-描述：设置编程灯状态。
+- 描述：设置编程灯状态。
 
--
-必选参数：
+- 必选参数：
 
   - number：编程灯编号或对应值。
 
@@ -412,8 +377,7 @@ go.set_rgb_light(number,effect,r,g,b,cycle,counts)
 
   - False： 指令未完成。
 
--
-示例
+- 示例
 
 ```python
 go.set_rgb_light(number="LED_1", effect=1,r=255,g=0,b=0,cycle=2,counts=2)
@@ -426,19 +390,16 @@ go.set_rgb_light(number="LED_1", effect=1,r=255,g=0,b=0,cycle=2,counts=2)
 
 ## 设置蜂鸣器音效
 
--
-原型：
+- 原型：
 
 ```python
 go.set_buzzer_sound(index,tone,beat)
 
 ```
 
--
-描述：设置蜂鸣器音效。
+- 描述：设置蜂鸣器音效。
 
--
-必选参数：
+- 必选参数：
 
   - index：蜂鸣器的音效编号。
 
@@ -466,8 +427,7 @@ go.set_buzzer_sound(index,tone,beat)
 
   - False： 指令未完成。
 
--
-示例
+- 示例
 
 ```python
 go.set_buzzer_sound(index=2, tone=50, beat=2)
@@ -480,22 +440,18 @@ go.set_buzzer_sound(index=2, tone=50, beat=2)
 
 ## 获取超声波数据
 
--
-原型：
+- 原型：
 
 ```python
 go.get_ultrasonic_data()
 
 ```
 
--
-描述：超声波传感器对检测范围内的障碍物进行检测，检测范围：2cm ~ 40 cm，该指令用于获取超声波传感器的检测数据。
+- 描述：超声波传感器对检测范围内的障碍物进行检测，检测范围：2cm ~ 40 cm，该指令用于获取超声波传感器的检测数据。
 
--
-必选参数：无
+- 必选参数：无
 
--
-返回：{front,back,left,right}
+- 返回：{front,back,left,right}
 
   -
 front： 正前方超声波传感器检测到障碍物的距离，单位 cm。
@@ -511,8 +467,7 @@ right：右边超声波传感器检测到障碍物的距离，单位 cm。
 
 其中，返回值为0时，表示超声波传感器故障；返回值为40时，表示未检测到障碍物；返回值为255时，表示超声波传感器未打开。
 
--
-示例
+- 示例
 
 ```python
 result = go.get_ultrasonic_data( )
@@ -526,19 +481,16 @@ print (result)
 
 ## 获取里程计数据
 
--
-原型：
+- 原型：
 
 ```python
 go.get_odometer_data()
 
 ```
 
--
-描述：获取里程计数据，即获取Magician Go当前位置的坐标和航向角。
+- 描述：获取里程计数据，即获取Magician Go当前位置的坐标和航向角。
 
--
-必选参数：无
+- 必选参数：无
 
 - 返回：{x, y, yaw}
 
@@ -548,8 +500,7 @@ go.get_odometer_data()
 
   - yaw：Magician Go的航向角，数据类型：float，单位：° (度)。
 
--
-示例
+- 示例
 
 ```python
 result = go.get_odometer_data( )
@@ -563,29 +514,24 @@ print(result)
 
 ## 获取电池电压
 
--
-原型：
+- 原型：
 
 ```python
 go.get_power_voltage()
 
 ```
 
--
-描述：获取Magician Go的电池电压和电池电量。
+- 描述：获取Magician Go的电池电压和电池电量。
 
--
-必选参数：无
+- 必选参数：无
 
--
-返回：{powerVoltage, powerPercentage}
+- 返回：{powerVoltage, powerPercentage}
 
   - powerVoltage：电池电压，数据类型：float，单位：V。
 
   - powerPercentage：剩余电池电量的比例，数据类型：float，范围：0 ~ 1。
 
--
-示例
+- 示例
 
 ```python
 result = go.get_power_voltage( )
@@ -599,19 +545,16 @@ print(result)
 
 ## 获取IMU角度数据
 
--
-原型：
+- 原型：
 
 ```python
 go.get_imu_angle()
 
 ```
 
--
-描述：获取Magician Go的IMU角度数据。
+- 描述：获取Magician Go的IMU角度数据。
 
--
-必选参数：无
+- 必选参数：无
 
 - 返回：{yaw, roll, pitch}
 
@@ -621,8 +564,7 @@ go.get_imu_angle()
 
   - pitch：IMU俯仰角，数据类型：float，单位：° (度)。
 
--
-示例
+- 示例
 
 ```python
 result = go.get_imu_angle()
@@ -636,8 +578,7 @@ print(result)
 
 ## 自动巡线
 
--
-原型：
+- 原型：
 
 ```python
 go.set_auto_trace(trace)
@@ -662,8 +603,7 @@ go.set_auto_trace(trace)
 
   - False： 指令未完成。
 
--
-示例
+- 示例
 
 ```python
 go.set_auto_trace(trace=1)
@@ -676,19 +616,16 @@ Magician Go开启自动巡线功能。
 
 ## 设置巡线速度参数
 
--
-原型：
+- 原型：
 
 ```python
 go.set_trace_speed(speed)
 
 ```
 
--
-描述：设置巡线速度。
+- 描述：设置巡线速度。
 
--
-必选参数：
+- 必选参数：
 
   - speed：巡线速度。数据类型：float，取值范围：0 ~ 30 cm/s。速度大于 20 cm/s时，需要设置pid参数；速度小于5 cm/s时，Magician Go运动不明显。
 
@@ -698,8 +635,7 @@ go.set_trace_speed(speed)
 
   - False： 指令未完成。
 
--
-示例
+- 示例
 
 ```python
 go.set_auto_trace(trace=1)
@@ -713,8 +649,7 @@ go.set_trace_speed(speed=20)
 
 ## 设置巡线PID
 
--
-原型：
+- 原型：
 
 ```python
 go.set_trace_pid(p,i,d)
@@ -737,8 +672,7 @@ go.set_trace_pid(p,i,d)
 
   - False： 指令未完成。
 
--
-示例
+- 示例
 
 ```python
 go.set_trace_pid(p=0.5,i=0,d=0.5)
@@ -751,8 +685,7 @@ go.set_trace_pid(p=0.5,i=0,d=0.5)
 
 ## 获取巡线角度数据
 
--
-原型：
+- 原型：
 
 ```python
 go.get_trace_angle()
@@ -767,8 +700,7 @@ go.get_trace_angle()
 
   - angle： 角度。
 
--
-示例
+- 示例
 
 ```python
 angle = go.get_trace_angle()
@@ -782,19 +714,16 @@ print(angle)
 
 ## 获取末端AI摄像头目标检测数据
 
--
-原型：
+- 原型：
 
 ```python
 go.get_arm_camera_obj()
 
 ```
 
--
-描述：获取末端 AI 摄像头所检测到的目标物品对应的检测数据 。
+- 描述：获取末端 AI 摄像头所检测到的目标物品对应的检测数据 。
 
--
-必选参数：无
+- 必选参数：无
 
 - 返回：{count, dl_obj[count]}
 
@@ -832,8 +761,7 @@ go.get_arm_camera_obj()
 | 4 | 国际快递 | International Express |
 | 5 | 同城快递 | City Express |
 
--
-示例
+- 示例
 
 ```python
 datalist = go.get_arm_camera_obj()                      # 得到末端摄像头检测的信息
@@ -851,22 +779,18 @@ if datalist["count"]:                                   # 如果控制盒上存�
 
 ## 获取底盘AI摄像头目标检测数据
 
--
-原型：
+- 原型：
 
 ```python
 go.get_car_camera_obj()
 
 ```
 
--
-描述：获取底盘AI摄像头所检测到的目标物品对应的检测数据 。
+- 描述：获取底盘AI摄像头所检测到的目标物品对应的检测数据 。
 
--
-必选参数：无
+- 必选参数：无
 
--
-返回：{count, dl_obj[count]}
+- 返回：{count, dl_obj[count]}
 
   - count： 目标物品的总数量。
 
@@ -897,8 +821,7 @@ go.get_car_camera_obj()
 | 10 | 仓库指示牌 | Intelligent Warehouse Sign |
 | 11 | 斑马线 | zebra crossing |
 
--
-示例
+- 示例
 
 ```python
 go.get_car_camera_obj()
@@ -911,19 +834,16 @@ go.get_car_camera_obj()
 
 ## 获取末端AI摄像头二维码检测数据
 
--
-原型：
+- 原型：
 
 ```python
 go.get_arm_camera_tag()
 
 ```
 
--
-描述：末端 AI 摄像检测到贴有 Apriltag 码的物品时，获取 Apriltag 码的参数。
+- 描述：末端 AI 摄像检测到贴有 Apriltag 码的物品时，获取 Apriltag 码的参数。
 
--
-必选参数：无
+- 必选参数：无
 
 - 返回：{count, dl_obj[count]}
 
@@ -941,8 +861,7 @@ go.get_arm_camera_tag()
 
     - ID： Apriltag 码的编号
 
--
-示例
+- 示例
 
 ```python
 res = go.get_arm_camera_tag()

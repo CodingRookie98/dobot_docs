@@ -6,19 +6,16 @@
 
 ## 点到点运动
 
--
-原型：
+- 原型：
 
 ```python
 magician.ptp(mode,x,y,z,r)
 
 ```
 
--
-描述：机械臂以设定的模式运动至目标点。
+- 描述：机械臂以设定的模式运动至目标点。
 
--
-必选参数：
+- 必选参数：
 
   - mode：PTP 模式，取值范围：0~9，具体含义如下：
 
@@ -56,8 +53,7 @@ magician.ptp(mode,x,y,z,r)
 
   - False：指令未完成。
 
--
-示例
+- 示例
 
 ```python
 magician.ptp(mode=0, x=200, y=100, z=10, r=0)
@@ -70,19 +66,16 @@ magician.ptp(mode=0, x=200, y=100, z=10, r=0)
 
 ## 设置滑轨开关及版本
 
--
-原型：
+- 原型：
 
 ```python
 magician.set_device_withl(enable, version)
 
 ```
 
--
-描述：设置滑轨的开关状态以及版本。
+- 描述：设置滑轨的开关状态以及版本。
 
--
-必选参数：
+- 必选参数：
 
   - enable：使能滑轨，True：使能；False：未使能。
 
@@ -94,8 +87,7 @@ magician.set_device_withl(enable, version)
 
   - False： 指令未完成。
 
--
-示例
+- 示例
 
 ```python
 magician.set_device_withl(enable=True, version=0)
@@ -108,19 +100,16 @@ magician.set_device_withl(enable=True, version=0)
 
 ## 滑轨点到点运动速度比例
 
--
-原型：
+- 原型：
 
 ```python
 magician.set_ptpl_params(vel, accel)
 
 ```
 
--
-描述：设置滑轨的速度和加速度。
+- 描述：设置滑轨的速度和加速度。
 
--
-必选参数：
+- 必选参数：
 
   - vel：滑轨的速度比例，取值范围：1~100。
 
@@ -132,8 +121,7 @@ magician.set_ptpl_params(vel, accel)
 
   - False： 指令未完成。
 
--
-示例
+- 示例
 
 ```python
 magician.set_ptpl_params(vel=50, accel=50)
@@ -146,19 +134,16 @@ magician.set_ptpl_params(vel=50, accel=50)
 
 ## 点到点运动（包含滑轨）
 
--
-原型：
+- 原型：
 
 ```python
 magician.set_ptpwithl_cmd(mode, x, y, z, r, l)
 
 ```
 
--
-描述：执行带滑轨的点到点运动。
+- 描述：执行带滑轨的点到点运动。
 
--
-必选参数：
+- 必选参数：
 
   - mode：PTP 模式，取值范围：0~9，具体含义如下：
 
@@ -192,15 +177,13 @@ magician.set_ptpwithl_cmd(mode, x, y, z, r, l)
 
   - l：滑轨位姿的坐标值。
 
--
-返回：
+- 返回：
 
   - True： 指令完成。
 
   - False： 指令未完成。
 
--
-示例
+- 示例
 
 ```python
 magician.set_ptpwithl_cmd(mode=1, x=200, y=100, z=10, r=0, l=100)
@@ -211,19 +194,16 @@ magician.set_ptpwithl_cmd(mode=1, x=200, y=100, z=10, r=0, l=100)
 
 ## 设置R轴角度
 
--
-原型：
+- 原型：
 
 ```python
  magician.set_r(r)
 
 ```
 
--
-描述：设置R轴的角度。
+- 描述：设置R轴的角度。
 
--
-必选参数：
+- 必选参数：
 
   - r：R 轴角度值，单位：°。
 
@@ -233,8 +213,7 @@ magician.set_ptpwithl_cmd(mode=1, x=200, y=100, z=10, r=0, l=100)
 
   - False： 指令未完成。
 
--
-示例
+- 示例
 
 ```python
 magician.set_r(r=100)
@@ -247,19 +226,16 @@ magician.set_r(r=100)
 
 ## 设置运动速度比例
 
--
-原型：
+- 原型：
 
 ```python
 magician.motion_params = vel, acc
 
 ```
 
--
-描述：设置运动速度和加速度。
+- 描述：设置运动速度和加速度。
 
--
-必选参数：
+- 必选参数：
 
   - vel：速度的比例。
 
@@ -271,8 +247,7 @@ magician.motion_params = vel, acc
 
   - False： 指令未完成。
 
--
-示例
+- 示例
 
 ```python
 magician.motion_params = 50, 50
@@ -285,19 +260,16 @@ magician.motion_params = 50, 50
 
 ## 设置门型运动参数
 
--
-原型：
+- 原型：
 
 ```python
 magician.jump_params = zlimit, height
 
 ```
 
--
-描述：设置门型运动参数。
+- 描述：设置门型运动参数。
 
--
-必选参数：
+- 必选参数：
 
   - zlimit：最大抬升高度；
 
@@ -309,8 +281,7 @@ magician.jump_params = zlimit, height
 
   - False： 指令未完成。
 
--
-示例
+- 示例
 
 ```python
 magician.jump_params = 100, 20 # zlimit, height
@@ -323,19 +294,16 @@ magician.jump_params = 100, 20 # zlimit, height
 
 ## 设置 IO 端口模式
 
--
-原型：
+- 原型：
 
 ```python
 magician.set_multiplexing(io, multiplex)
 
 ```
 
--
-描述：设置 IO 端口模式。
+- 描述：设置 IO 端口模式。
 
--
-必选参数：
+- 必选参数：
 
   - io：io 端口序号，数据类型：str，取值范围："DO_01"~"DO_20"。
 
@@ -361,8 +329,7 @@ magician.set_multiplexing(io, multiplex)
 
   - False： 指令未完成。
 
--
-示例
+- 示例
 
 ```python
 magician.set_multiplexing(io="DO_01", multiplex=1)
@@ -375,19 +342,16 @@ magician.set_multiplexing(io="DO_01", multiplex=1)
 
 ## 设置PWM输出端口频率及占空比
 
--
-原型：
+- 原型：
 
 ```python
 magician.set_pwm(io, freq, cycle)
 
 ```
 
--
-描述：设置 PWM 输出端口的频率及占空比。
+- 描述：设置 PWM 输出端口的频率及占空比。
 
--
-必选参数：
+- 必选参数：
 
   - io：io 端口序号，数据类型：str，取值范围："DO_01"~"DO_20"。
 
@@ -401,8 +365,7 @@ magician.set_pwm(io, freq, cycle)
 
   - False： 指令未完成。
 
--
-示例
+- 示例
 
 ```python
 magician.set_pwm(io="DO_01", freq=10, cycle=30)
@@ -415,19 +378,16 @@ magician.set_pwm(io="DO_01", freq=10, cycle=30)
 
 ## 设置数字输出端口
 
--
-原型：
+- 原型：
 
 ```python
 magician.set_do(io，level)
 
 ```
 
--
-描述：设置数字端口输出的电平。
+- 描述：设置数字端口输出的电平。
 
--
-必选参数：
+- 必选参数：
 
   - io：io 端口序号，数据类型：str，取值范围："DO_01"~"DO_20"。
 
@@ -439,8 +399,7 @@ magician.set_do(io，level)
 
   - False： 指令未完成。
 
--
-示例
+- 示例
 
 ```python
 magician.set_do(io="DO_01", level=1)
@@ -453,31 +412,26 @@ magician.set_do(io="DO_01", level=1)
 
 ## 获取数字信号
 
--
-原型：
+- 原型：
 
 ```python
 magician.get_di(io)
 
 ```
 
--
-描述：获取IO接口的数字信号。
+- 描述：获取IO接口的数字信号。
 
--
-必选参数：
+- 必选参数：
 
   - io：io 端口序号，数据类型：str，取值范围："DI_01"~"DI_20"。
 
--
-返回：
+- 返回：
 
   - 0： 低电平。
 
   - 1： 高电平。
 
--
-示例
+- 示例
 
 ```python
 magician.get_di(io="DI_01")
@@ -490,29 +444,24 @@ magician.get_di(io="DI_01")
 
 ## 获取模拟信号
 
--
-原型：
+- 原型：
 
 ```python
 magician.get_adc(io)
 
 ```
 
--
-描述：获取IO接口的模拟信号。
+- 描述：获取IO接口的模拟信号。
 
--
-必选参数：
+- 必选参数：
 
   - io：io 端口序号，数据类型：str，取值范围："DO_01"~"DO_20"。
 
--
-返回：
+- 返回：
 
   - val：模拟信号，取值范围：0-4095。
 
--
-示例
+- 示例
 
 ```python
 magician.get_adc(io="DO_01")
@@ -525,19 +474,16 @@ magician.get_adc(io="DO_01")
 
 ## 设置末端吸盘
 
--
-原型：
+- 原型：
 
 ```python
 magician.set_endeffector_suctioncup(enable, on)
 
 ```
 
--
-描述：设置吸盘的工作状态。
+- 描述：设置吸盘的工作状态。
 
--
-必选参数：
+- 必选参数：
 
   - enable：吸盘使能状态。True：吸盘使能；False：吸盘未使能。
 
@@ -549,8 +495,7 @@ magician.set_endeffector_suctioncup(enable, on)
 
   - False： 指令未完成。
 
--
-示例
+- 示例
 
 ```python
 magician.set_endeffector_suctioncup(enable=True, on=True)
@@ -563,19 +508,16 @@ magician.set_endeffector_suctioncup(enable=True, on=True)
 
 ## 设置末端手爪
 
--
-原型：
+- 原型：
 
 ```python
 magician.set_endeffector_gripper(enable, on)
 
 ```
 
--
-描述：设置手爪的工作状态。
+- 描述：设置手爪的工作状态。
 
--
-必选参数：
+- 必选参数：
 
   - enable：手爪使能状态。True：手爪使能；False：手爪未使能。
 
@@ -587,8 +529,7 @@ magician.set_endeffector_gripper(enable, on)
 
   - False： 指令未完成。
 
--
-示例
+- 示例
 
 ```python
 magician.set_endeffector_gripper(enable=True, on=True)
@@ -601,19 +542,16 @@ magician.set_endeffector_gripper(enable=True, on=True)
 
 ## 设置光电传感器
 
--
-原型：
+- 原型：
 
 ```python
 magician.set_infrared_sensor(port, enable, version)
 
 ```
 
--
-描述：设置光电传感器使能状态及版本。
+- 描述：设置光电传感器使能状态及版本。
 
--
-必选参数：
+- 必选参数：
 
   - port：光电传感器连接至 Magician的端口，取值范围：1，2，4，5。其中，port 1，port 2，port 4，port 5分别对应Magician的GP1，GP2，GP4，GP5。
 
@@ -627,8 +565,7 @@ magician.set_infrared_sensor(port, enable, version)
 
   - False： 指令未完成。
 
--
-示例
+- 示例
 
 ```python
 magician.set_infrared_sensor(port=1, enable=True, version=1)
@@ -641,19 +578,16 @@ magician.set_infrared_sensor(port=1, enable=True, version=1)
 
 ## 获取光电传感器读数
 
--
-原型：
+- 原型：
 
 ```python
 magician.get_infrared_sensor(port)
 
 ```
 
--
-描述：获取光电传感器的返回值。
+- 描述：获取光电传感器的返回值。
 
--
-必选参数：
+- 必选参数：
 
   - port：光电传感器连接至 Magician的端口，取值范围：1~6。其中，port 1，port 2，port 4，port 5分别对应Magician的GP1，GP2，GP4，GP5。
 
@@ -663,8 +597,7 @@ magician.get_infrared_sensor(port)
 
   - 1： 光电传感器检测到物体。
 
--
-示例
+- 示例
 
 ```python
 magician.get_infrared_sensor(port=1)
@@ -677,19 +610,16 @@ magician.get_infrared_sensor(port=1)
 
 ## 设置颜色传感器
 
--
-原型：
+- 原型：
 
 ```python
 magician.set_color_sensor(port, enable, version)
 
 ```
 
--
-描述：设置颜色传感器使能状态及版本。
+- 描述：设置颜色传感器使能状态及版本。
 
--
-必选参数：
+- 必选参数：
 
   - port：颜色传感器连接至 Magician的端口。取值：1~6。
 
@@ -703,8 +633,7 @@ magician.set_color_sensor(port, enable, version)
 
   - False： 指令未完成。
 
--
-示例
+- 示例
 
 ```python
 magician.set_color_sensor(port=1, enable=True, version=0)
@@ -717,22 +646,18 @@ magician.set_color_sensor(port=1, enable=True, version=0)
 
 ## 获取颜色传感器读数
 
--
-原型：
+- 原型：
 
 ```python
 magician.get_color_sensor()
 
 ```
 
--
-描述：获取颜色传感器返回的像素值。
+- 描述：获取颜色传感器返回的像素值。
 
--
-必选参数：无
+- 必选参数：无
 
--
-返回：(r, g, b)
+- 返回：(r, g, b)
 
   - r： 红色，取值范围：0-255。
 
@@ -740,8 +665,7 @@ magician.get_color_sensor()
 
   - b：蓝色，取值范围：0-255。
 
--
-示例
+- 示例
 
 ```python
 magician.get_color_sensor()
@@ -754,19 +678,16 @@ magician.get_color_sensor()
 
 ## 等待 n 秒
 
--
-原型：
+- 原型：
 
 ```python
 magician.wait(second)
 
 ```
 
--
-描述：设置等待时间。
+- 描述：设置等待时间。
 
--
-必选参数：
+- 必选参数：
 
   - second：等待时间，单位 s。
 
@@ -776,8 +697,7 @@ magician.wait(second)
 
   - False： 指令未完成。
 
--
-示例
+- 示例
 
 ```python
 magician.wait(second=10)
@@ -790,19 +710,16 @@ magician.wait(second=10)
 
 ## 回零
 
--
-原型：
+- 原型：
 
 ```python
 magician.set_home()
 
 ```
 
--
-描述：Magician执行回零操作。
+- 描述：Magician执行回零操作。
 
--
-必选参数：无
+- 必选参数：无
 
 - 返回：
 
@@ -810,8 +727,7 @@ magician.set_home()
 
   - False： 指令未完成。
 
--
-示例
+- 示例
 
 ```python
 magician.set_home()
@@ -824,22 +740,18 @@ Magician执行回零操作。
 
 ## 获取当前位姿
 
--
-原型：
+- 原型：
 
 ```python
 magician.get_pose()
 
 ```
 
--
-描述：获取Magician当前位姿。
+- 描述：获取Magician当前位姿。
 
--
-必选参数：无
+- 必选参数：无
 
--
-返回：(x, y, z, r, jointAngle)
+- 返回：(x, y, z, r, jointAngle)
 
   - x：X 轴坐标。
 
@@ -851,8 +763,7 @@ magician.get_pose()
 
   - jointAngle：关节坐标列表 [关节 1,关节 2,关节 3,关节 4]。
 
--
-示例
+- 示例
 
 ```python
 magician.get_pose()
@@ -865,27 +776,22 @@ magician.get_pose()
 
 ## 获取滑轨位姿
 
--
-原型：
+- 原型：
 
 ```python
 magician.get_posel()
 
 ```
 
--
-描述：获取滑轨位姿的坐标值。
+- 描述：获取滑轨位姿的坐标值。
 
--
-必选参数：无。
+- 必选参数：无。
 
--
-返回：
+- 返回：
 
   - value：滑轨坐标值。
 
--
-示例
+- 示例
 
 ```python
 magician.get_posel()
@@ -898,16 +804,14 @@ magician.get_posel()
 
 ## 清除报警
 
--
-原型：
+- 原型：
 
 ```python
 magician.clear_alarm()
 
 ```
 
--
-描述：清除报警。
+- 描述：清除报警。
 
 - 必选参数：无
 
@@ -917,8 +821,7 @@ magician.clear_alarm()
 
   - False： 指令未完成。
 
--
-示例
+- 示例
 
 ```python
 magician.clear_alarm()
@@ -931,19 +834,16 @@ magician.clear_alarm()
 
 ## 获取机械臂速度比例
 
--
-原型：
+- 原型：
 
 ```python
 magician.get_arm_speed_ratio(mode)
 
 ```
 
--
-描述：获取Magician的速度比例。
+- 描述：获取Magician的速度比例。
 
--
-必选参数：
+- 必选参数：
 
   - mode：运动模式，0：点动；1：点到点运动。
 
@@ -951,8 +851,7 @@ magician.get_arm_speed_ratio(mode)
 
   - ratio：对应运动模式的速度比例。
 
--
-示例
+- 示例
 
 ```python
 magician.get_arm_speed_ratio(mode=1)
@@ -965,19 +864,16 @@ magician.get_arm_speed_ratio(mode=1)
 
 ## 设置丢步阈值
 
--
-原型：
+- 原型：
 
 ```python
 magician.set_lost_step_params(value)
 
 ```
 
--
-描述：设置丢步检测阈值，用于检测定位误差是否超过该阈值。如果超过该阈值，则说明电机丢步。
+- 描述：设置丢步检测阈值，用于检测定位误差是否超过该阈值。如果超过该阈值，则说明电机丢步。
 
--
-必选参数：
+- 必选参数：
 
   - value：丢步检测阈值，数据类型：int。
 
@@ -987,8 +883,7 @@ magician.set_lost_step_params(value)
 
   - False： 指令未完成。
 
--
-示例
+- 示例
 
 ```python
 magician.set_lost_step_params(value=10)
@@ -1001,19 +896,16 @@ magician.set_lost_step_params(value=10)
 
 ## 执行检测丢步
 
--
-原型：
+- 原型：
 
 ```python
 magician.set_lost_step_cmd()
 
 ```
 
--
-描述：执行丢步检测。
+- 描述：执行丢步检测。
 
--
-必选参数：无
+- 必选参数：无
 
 - 返回：
 
@@ -1021,8 +913,7 @@ magician.set_lost_step_cmd()
 
   - False： 指令未完成。
 
--
-示例
+- 示例
 
 ```python
 magician.set_lost_step_cmd()
@@ -1035,16 +926,14 @@ magician.set_lost_step_cmd()
 
 ## 检测丢步结果
 
--
-原型：
+- 原型：
 
 ```python
 magician.get_lost_step_result()
 
 ```
 
--
-描述：获取丢步检测的结果。
+- 描述：获取丢步检测的结果。
 
 - 必选参数：无。
 
@@ -1052,8 +941,7 @@ magician.get_lost_step_result()
 
   - state：系统报警状态，数据类型：list。
 
--
-示例
+- 示例
 
 ```python
 magician.get_lost_step_result()
@@ -1066,19 +954,16 @@ magician.get_lost_step_result()
 
 ## 设置传送带速度参数并运动
 
--
-原型：
+- 原型：
 
 ```python
 magician.set_converyor(index,enable,speed)
 
 ```
 
--
-描述：设置传送带速度参数并控制传送带运动。
+- 描述：设置传送带速度参数并控制传送带运动。
 
--
-必选参数：
+- 必选参数：
 
   - index：电机序号，取值范围：0~1，也可以设置为字符，具体对应关系如下：
 
@@ -1090,15 +975,13 @@ magician.set_converyor(index,enable,speed)
 
   - speed：电机控制速度，单位：毫米每秒。
 
--
-返回：
+- 返回：
 
   - True： 指令完成。
 
   - False： 指令未完成。
 
--
-示例
+- 示例
 
 ```python
 magician.set_converyor(index=magician.Stepper1,enable=True,speed=250.0)
