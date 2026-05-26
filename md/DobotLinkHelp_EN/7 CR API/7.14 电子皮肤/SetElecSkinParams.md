@@ -1,0 +1,1 @@
+`{ "id": 1, "jsonrpc": "2.0", "method": "dobotlink.CR.SetElecSkinParams", "params": { "portName": "192.168.5.1", "data": { "avoidDistance":{ "max":xx, "min":xx, "def":xx }, "avoidVel":{ "max":xx, "min":xx, "def":xx }, "avoidAcc":{ "max":xx, "min":xx, "def":xx }, "resumeVel":{ "max":xx, "min":xx, "def":xx }, "resumeAcc":{ "max":xx, "min":xx, "def":xx } } } }`

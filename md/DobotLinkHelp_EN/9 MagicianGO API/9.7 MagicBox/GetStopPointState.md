@@ -1,0 +1,52 @@
+**Query whether the automatic parking service has stopped**
+
+ 
+
+request params
+
+|           |         |           |                                  |
+|-----------|---------|-----------|----------------------------------|
+|  field    |  type   |  required | explain                          |
+|  portName |  string |  yes      | communication port of the device |
+
+ 
+
+response result
+
+|         |       |            |                                                                       |
+|---------|-------|------------|-----------------------------------------------------------------------|
+|  field  |  type |   required |  explain                                                              |
+|  result |  bool |  yes       |  response result (true: operation succeeded, false: operation failed) |
+
+ 
+
+**KeyWords:**
+
+portName: string
+
+ 
+
+INPUT:
+
+``` language-json
+{
+    "id": 1,
+    "jsonrpc": "2.0",
+    "method": "dobotlink.MagicBox.GetStopPointState",
+    "params": {
+        "portName": "COM4" 
+    }
+}
+```
+
+OUTPUT：
+
+``` language-json
+{
+    "id": 1,
+    "jsonrpc": "2.0",
+    "result": {
+        "result": true
+    }
+}
+```

@@ -1,0 +1,22 @@
+**Description: 适用于检测到碰撞后继续运行脚本**
+
+**KeyWords:**
+
+portName: string
+
+DeviceName: string
+
+ 
+
+INPUT:
+
+``` language-json
+{
+    "id": 1,
+    "jsonrpc": "2.0",
+    "method": "dobotlink.MagicianPro.SetScriptRun",
+    "params": {
+        "portName": "192.168.1.6" 
+    }
+}
+```

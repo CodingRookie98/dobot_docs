@@ -1,10 +1,11 @@
 # Dobot 机器人开发文档库
 
-本仓库用于管理和维护 Dobot 工业机器人的各类开发手册与接口文档。目前已完成了以下三大接口文档的全量 Markdown 模块化接入、校对与优化：
+本仓库用于管理和维护 Dobot 工业机器人的各类开发手册与接口文档。目前已完成了以下四大接口文档的全量 Markdown 模块化接入、校对与优化：
 
 1.  **Dobot TCP/IP 二次开发接口文档 (V4.6.0)**
 2.  **Dobot edu API (Python SDK) 开发接口文档 (v2.2.2)**
-3.  **DobotLink API 开发接口文档 (CHM 转换版)**
+3.  **DobotLink API 开发接口文档 (CHM 转换中文版)**
+4.  **DobotLink API English Version Documentation (CHM 转换英文版)**
 
 ---
 
@@ -14,7 +15,8 @@
 ├── pdf/                            # 官方原始 PDF 物理文档
 │   └── Dobot_TCP_IP二次开发接口文档V4.6.0_2024.12.26_cn.pdf
 ├── CHM/                            # 官方原始 CHM 帮助文档
-│   └── DobotLinkHelp.CHM
+│   ├── DobotLinkHelp.CHM
+│   └── DobotLinkHelp_EN.CHM
 ├── md/                             # Markdown 电子化版本
 │   ├── Dobot_TCP_IP_v4.6.0/        # TCP/IP 模块化文档目录
 │   │   ├── README.md               # TCP/IP 导航首页 (Index)
@@ -22,8 +24,11 @@
 │   ├── Dobot_edu_api/              # Python SDK 模块化文档目录
 │   │   ├── README.md               # Python SDK 导航首页 (Index)
 │   │   └── 01_Dobot_Magician_Lite.md 等...
-│   └── DobotLinkHelp/              # DobotLink API 模块化文档目录
-│       ├── README.md               # DobotLink 导航首页 (Index)
+│   ├── DobotLinkHelp/              # DobotLink API 模块化文档目录 (中文版)
+│   │   ├── README.md               # DobotLink 中文导航首页 (README)
+│   │   └── index.md                # 全量 API 字母顺序索引页
+│   └── DobotLinkHelp_EN/           # DobotLink API 模块化文档目录 (英文版)
+│       ├── README.md               # DobotLink 英文导航首页 (README)
 │       └── index.md                # 全量 API 字母顺序索引页
 └── README.md                       # 本说明文件 (仓库全局导引)
 ```
@@ -34,7 +39,8 @@
 
 *   👉 [**Dobot TCP/IP 二次开发接口文档 (V4.6.0) 导航首页**](md/Dobot_TCP_IP_v4.6.0/README.md)
 *   👉 [**Dobot edu API (Python SDK) 接口文档 (v2.2.2) 导航首页**](md/Dobot_edu_api/README.md)
-*   👉 [**DobotLink API 接口文档 (CHM 转换版) 导航首页**](md/DobotLinkHelp/README.md)
+*   👉 [**DobotLink API 接口文档 (CHM 转换中文版) 导航首页**](md/DobotLinkHelp/README.md)
+*   👉 [**DobotLink API English Version Documentation Navigation Index**](md/DobotLinkHelp_EN/README.md)
 
 ---
 
@@ -100,6 +106,29 @@
 | [**11 Download API**](md/DobotLinkHelp/11%20Download%20API) | 固件下载与更新 | **全量完整** | ✅ 已校验 | 包含固件升级、多系列固件获取与状态确认共 **10 个** API |
 | [**13 错误码**](md/DobotLinkHelp/13%20错误码) | 错误码说明 | **全量完整** | ✅ 已校验 | 整理了 DobotLink 所有底层错误状态的对照表 |
 | [**index.md**](md/DobotLinkHelp/index.md) | 全量 API 索引页 | **100% 映射** | ✅ 已校验 | 按字母顺序排列的 770+ 个 API 网页的直达索引 |
+
+---
+
+### 4. DobotLink API 接口文档 (英文版)
+
+以下是 `md/DobotLinkHelp_EN/` 子目录下所有子目录及核心文件的状态：
+
+| 子目录/文件名称 | 对应功能模块 | 内容完整度 | 校验状态 | 详细备注 / 统计数据 |
+| :--- | :--- | :---: | :---: | :--- |
+| [**1 Preface**](md/DobotLinkHelp_EN/1%20前言) | 前言与开发协议 | **全量完整** | ✅ 已校验 | 包含英文版接口协议说明等入门前置知识 |
+| [**2 DobotLink API**](md/DobotLinkHelp_EN/2%20DobotLink%20API) | DobotLink 核心 API | **全量完整** | ✅ 已校验 | 包含 `CleanLogs`、`CloseDobotLink` 等 **12 个** 核心控制 API |
+| [**3 Magician API**](md/DobotLinkHelp_EN/3%20Magician%20API) | Magician 机械臂 | **全量完整** | ✅ 已校验 | 包含 PTP、JOG、IO 及传送带等 **44 个** API |
+| [**4 MagicianLite API**](md/DobotLinkHelp_EN/4%20MagicianLite%20API) | Magician Lite 机械臂 | **全量完整** | ✅ 已校验 | 包含点到位、滑轨、传送带、吸盘及通用 IO 共 **24 个** API |
+| [**5 MagicBox API**](md/DobotLinkHelp_EN/5%20MagicBox%20API) | Magic Box 控制箱 | **全量完整** | ✅ 已校验 | 包含电机参数、滑轨、手持示教及多传感器共 **30 个** API |
+| [**6 M1 API**](md/DobotLinkHelp_EN/6%20M1%20API) | M1 机器人 | **全量完整** | ✅ 已校验 | 包含队列控制、PTP、CP、圆弧插补及安全防护共 **35 个** API |
+| [**7 CR API**](md/DobotLinkHelp_EN/7%20CR%20API) | CR 协作机器人 | **全量完整** | ✅ 已校验 | 包含标定、安全配置、电子皮肤及轨迹复现等 **37 个** API |
+| [**8 MagicianPro API**](md/DobotLinkHelp_EN/8%20MagicianPro%20API) | Magician Pro 机械臂 | **全量完整** | ✅ 已校验 | 包含数据交换、传送带跟踪、Pro 特殊接口等 **24 个** API |
+| [**9 MagicianGO API**](md/DobotLinkHelp_EN/9%20MagicianGO%20API) | Magician GO 全向小车 | **全量完整** | ✅ 已校验 | 包含底盘控制、小车相机及 MagicBox 等共 **24 个** API |
+| [**10 DebuggerLite API**](md/DobotLinkHelp_EN/10%20DebuggerLite%20API) | DebuggerLite 调试器 | **全量完整** | ✅ 已校验 | 包含 `Prepare`、`Start`、`Wait` 及 `Stop` 等 **9 个** API |
+| [**11 Download API**](md/DobotLinkHelp_EN/11%20Download%20API) | 固件下载与更新 | **全量完整** | ✅ 已校验 | 包含固件升级、多系列固件获取与状态确认共 **10 个** API |
+| [**13 Error Code**](md/DobotLinkHelp_EN/13%20Error%20Code) | 错误码说明 | **全量完整** | ✅ 已校验 | 整理了 DobotLink 英文版所有底层错误状态的对照表 |
+| [**index.md**](md/DobotLinkHelp_EN/index.md) | 全量 API 索引页 | **100% 映射** | ✅ 已校验 | 按字母顺序排列的 770+ 个 API 网页的直达索引 |
+| [**README.md**](md/DobotLinkHelp_EN/README.md) | 英文版导航首页 | **100% 映射** | ✅ 已校验 | 英文版接口文档的结构总引导页 |
 
 ---
 
