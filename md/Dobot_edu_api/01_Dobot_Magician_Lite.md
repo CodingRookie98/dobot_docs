@@ -58,6 +58,7 @@ m_lite.set_ptpcmd(ptp_mode,x,y,z,r)
   - False： 指令未完成。
 
 - 示例
+
 ```python
 m_lite.set_ptpcmd(ptp_mode=0, x=200, y=20, z=10, r=0)
 
@@ -389,6 +390,7 @@ m_lite.set_ptpjump_params(z_limit, jump_height)
   - False： 指令未完成。
 
 - 示例
+
 ```python
 m_lite.set_ptpjump_params(z_limit=100, jump_height=100)
 

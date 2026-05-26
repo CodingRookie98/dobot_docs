@@ -91,6 +91,7 @@ beta_go.grab_obj_cartofloor(object_class)
   - False： 指令未完成。
 
 - 示例
+
 ```python
 beta_go.grab_obj_cartofloor(object_class=0)
 
@@ -120,6 +121,7 @@ beta_go.grab_obj_floortocar(object_class)
   - False：指令未完成。
 
 - 示例
+
 ```python
 beta_go.grab_obj_floortocar(object_class=1)
 
@@ -159,6 +161,7 @@ beta_go.stop_point(point,scope,err)
   - False： 指令未完成。
 
 - 示例
+
 ```python
 beta_go.stop_point(point=[100, 0], scope=20, err=2)
 
@@ -188,6 +191,7 @@ beta_go.set_ptp_car()
   - False： 指令未完成。
 
 - 示例
+
 ```python
 beta_go.set_ptp_car()
 
@@ -217,6 +221,7 @@ beta_go.set_ptp_floor()
   - False： 指令未完成。
 
 - 示例
+
 ```python
 beta_go.set_ptp_floor()
 
@@ -286,6 +291,7 @@ beta_go.creat_apriltag_obj(id,height)
   - False： 指令未完成。
 
 - 示例
+
 ```python
 beta_go.creat_apriltag_obj(0,10)
 
@@ -502,6 +508,7 @@ beta_go.arm_camera_is_detected(obj_name)
   - False： 未检测到obj_name对应的目标。
 
 - 示例
+
 ```python
 beta_go.arm_camera_is_detected(obj_name="red")
 
@@ -546,6 +553,7 @@ beta_go.car_camera_is_detected(sign_name)
   - False： 未检测到obj_name对应的指示牌。
 
 - 示例
+
 ```python
 beta_go.car_camera_is_detected(sign_name="r")
 
