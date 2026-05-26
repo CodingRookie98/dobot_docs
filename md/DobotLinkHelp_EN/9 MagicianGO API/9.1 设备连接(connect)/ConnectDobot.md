@@ -2,15 +2,18 @@
 
 portName: string
 
+*queueStart: bool (default:true)
+
 INPUT:
 
 ``` language-json
 {
     "id": 1,
     "jsonrpc": "2.0",
-    "method": "dobotlink.MagicianPro.ConnectDobot",
+    "method": "dobotlink.MagicBox.ConnectDobot",
     "params": {
-        "portName": "192.168.1.6"
+        "portName": "COM4",
+        "queueStart": true
     }
 }
 ```

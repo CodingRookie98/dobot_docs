@@ -4,7 +4,7 @@
 
 portName: string
 
-runningState: int (0:NORMAL MODE 1:SAFE MODE)
+runningMode: int (0:NORMAL MODE 1:SAFE MODE)
 
 INPUT:
 
