@@ -553,6 +553,7 @@
 - [SetTraceAuto](9 MagicianGO API/9.4 底盘控制(control)/SetTraceAuto.md)
 - [SetTraceCenterARC](9 MagicianGO API/9.4 底盘控制(control)/SetTraceCenterARC.md)
 - [SetTraceLineInfo](9 MagicianGO API/9.4 底盘控制(control)/SetTraceLineInfo.md)
+- [SetTraceLoop](9 MagicianGO API/9.4 底盘控制(control)/SetTraceLoop.md)
 - [SetTracePid](9 MagicianGO API/9.4 底盘控制(control)/SetTracePid.md)
 - [SetTraceRadiusARC](9 MagicianGO API/9.4 底盘控制(control)/SetTraceRadiusARC.md)
 - [SetTraceSpeed](9 MagicianGO API/9.4 底盘控制(control)/SetTraceSpeed.md)

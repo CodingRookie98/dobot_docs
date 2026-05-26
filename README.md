@@ -101,7 +101,7 @@
 | [**6 M1 API**](md/DobotLinkHelp/6%20M1%20API) | M1 机器人 | **全量完整** | ✅ 已校验 | 包含队列控制、PTP、CP、圆弧插补及安全防护共 **35 个** API |
 | [**7 CR API**](md/DobotLinkHelp/7%20CR%20API) | CR 协作机器人 | **全量完整** | ✅ 已校验 | 包含标定、安全配置、电子皮肤及轨迹复现等 **37 个** API |
 | [**8 MagicianPro API**](md/DobotLinkHelp/8%20MagicianPro%20API) | Magician Pro 机械臂 | **全量完整** | ✅ 已校验 | 包含数据交换、传送带跟踪、Pro 特殊接口等 **24 个** API |
-| [**9 MagicianGO API**](md/DobotLinkHelp/9%20MagicianGO%20API) | Magician GO 全向小车 | **全量完整** | ✅ 已校验 | 包含底盘控制、小车相机及 MagicBox 等共 **24 个** API |
+| [**9 MagicianGO API**](md/DobotLinkHelp/9%20MagicianGO%20API) | Magician GO 全向小车 | **全量完整** | ✅ 已校验 | 包含底盘控制、小车相机及 MagicBox 等共 **25 个** API |
 | [**10 DebuggerLite API**](md/DobotLinkHelp/10%20DebuggerLite%20API) | DebuggerLite 调试器 | **全量完整** | ✅ 已校验 | 包含 `Prepare`、`Start`、`Wait` 及 `Stop` 等 **9 个** API |
 | [**11 Download API**](md/DobotLinkHelp/11%20Download%20API) | 固件下载与更新 | **全量完整** | ✅ 已校验 | 包含固件升级、多系列固件获取与状态确认共 **10 个** API |
 | [**13 错误码**](md/DobotLinkHelp/13%20错误码) | 错误码说明 | **全量完整** | ✅ 已校验 | 整理了 DobotLink 所有底层错误状态的对照表 |
@@ -123,7 +123,7 @@
 | [**6 M1 API**](md/DobotLinkHelp_EN/6%20M1%20API) | M1 机器人 | **全量完整** | ✅ 已校验 | 包含队列控制、PTP、CP、圆弧插补及安全防护共 **35 个** API |
 | [**7 CR API**](md/DobotLinkHelp_EN/7%20CR%20API) | CR 协作机器人 | **全量完整** | ✅ 已校验 | 包含标定、安全配置、电子皮肤及轨迹复现等 **37 个** API |
 | [**8 MagicianPro API**](md/DobotLinkHelp_EN/8%20MagicianPro%20API) | Magician Pro 机械臂 | **全量完整** | ✅ 已校验 | 包含数据交换、传送带跟踪、Pro 特殊接口等 **24 个** API |
-| [**9 MagicianGO API**](md/DobotLinkHelp_EN/9%20MagicianGO%20API) | Magician GO 全向小车 | **全量完整** | ✅ 已校验 | 包含底盘控制、小车相机及 MagicBox 等共 **24 个** API |
+| [**9 MagicianGO API**](md/DobotLinkHelp_EN/9%20MagicianGO%20API) | Magician GO 全向小车 | **全量完整** | ✅ 已校验 | 包含底盘控制、小车相机及 MagicBox 等共 **25 个** API |
 | [**10 DebuggerLite API**](md/DobotLinkHelp_EN/10%20DebuggerLite%20API) | DebuggerLite 调试器 | **全量完整** | ✅ 已校验 | 包含 `Prepare`、`Start`、`Wait` 及 `Stop` 等 **9 个** API |
 | [**11 Download API**](md/DobotLinkHelp_EN/11%20Download%20API) | 固件下载与更新 | **全量完整** | ✅ 已校验 | 包含固件升级、多系列固件获取与状态确认共 **10 个** API |
 | [**13 Error Code**](md/DobotLinkHelp_EN/13%20Error%20Code) | 错误码说明 | **全量完整** | ✅ 已校验 | 整理了 DobotLink 英文版所有底层错误状态的对照表 |
@@ -140,3 +140,15 @@
     基于自定义 Python `HTMLParser` 转换引擎，将原始 HTML 的排版转换为无损 Markdown 标题和代码块，彻底清除了 GitBook 背景脚本噪音。
 3.  **便携性与相对路径**：
     整套文档所有的内部跳转以及根目录 README 关联均采用**相对路径链接**，完美支持在任何机器、Git 托管平台或静态网站中无缝阅读与跳转。
+
+---
+
+## 📝 更新与修复记录 (Changelog)
+
+### 2026-05-26
+- **补齐缺失 API 文档**：
+  - 新增 `dobotlink.MagicianGO.SetTraceLoop` 接口的中文与英文文档：[中文版](md/DobotLinkHelp/9%20MagicianGO%20API/9.4%20%E5%BA%95%E7%9B%98%E6%8E%A7%E5%88%B6(control)/SetTraceLoop.md) 和 [英文版](md/DobotLinkHelp_EN/9%20MagicianGO%20API/9.4%20%E5%BA%95%E7%9B%98%E6%8E%A7%E5%88%B6(control)/SetTraceLoop.md)（原官方 CHM 文档库中缺失该接口）。
+  - 在中英文版 API 全量索引页 [index.md](md/DobotLinkHelp/index.md) 和 [index.md](md/DobotLinkHelp_EN/index.md) 中添加了对应的字母索引链接。
+- **修复英文版 API 接口笔误**：
+  - **`ConnectDobot` 接口**：将错误的 method 路径 `dobotlink.MagicianPro.ConnectDobot` 修正为正确的 `dobotlink.MagicianGO.ConnectDobot`（文件：[ConnectDobot.md](md/DobotLinkHelp_EN/9%20MagicianGO%20API/9.1%20%E8%AE%BE%E5%A4%87%E8%BF%9E%E6%8E%A5(connect)/ConnectDobot.md)）。
+  - **`SetRunningMode` 接口**：将参数 `runningState` 修正为正确的 `runningMode`（文件：[SetRunningMode.md](md/DobotLinkHelp_EN/9%20MagicianGO%20API/9.4%20%E5%BA%95%E7%9B%98%E6%8E%A7%E5%88%B6(control)/SetRunningMode.md)）。

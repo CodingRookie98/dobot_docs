@@ -735,6 +735,7 @@
 - [SetSpeedometer](9 MagicianGO API/9.4 底盘控制(control)/SetSpeedometer.md)
 - [SetFixedOrientationMoveDistance](9 MagicianGO API/9.4 底盘控制(control)/SetFixedOrientationMoveDistance.md)
 - [SetTraceAuto](9 MagicianGO API/9.4 底盘控制(control)/SetTraceAuto.md)
+- [SetTraceLoop](9 MagicianGO API/9.4 底盘控制(control)/SetTraceLoop.md)
 - [GetRunningMode](9 MagicianGO API/9.4 底盘控制(control)/GetRunningMode.md)
 - [GetK210CarAprilTag](9 MagicianGO API/9.5 ArmCamera/GetK210CarAprilTag.md)
 - [GetCameraCalibrationMode](9 MagicianGO API/9.5 ArmCamera/GetCameraCalibrationMode.md)

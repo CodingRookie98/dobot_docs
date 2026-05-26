@@ -4,8 +4,8 @@ This directory contains the English version of the DobotLink API documentation, 
 
 ## Documentation Statistics
 
-- **Total Files**: 777 Markdown files (including this README)
-- **API Pages**: 776 documents
+- **Total Files**: 778 Markdown files (including this README)
+- **API Pages**: 777 documents
 - **Main Index**: [`index.md`](./index.md) - Alphabetical list of all available API pages
 
 ## Directory Structure
@@ -47,8 +47,20 @@ This documentation subset has been converted and audited from:
 
 ## Verification Status
 
-✅ All 776 API documents fully converted
+✅ All 777 API documents fully converted
 ✅ Character encoding corrected, 100% readable
 ✅ Index fully configured with portable links
 ✅ Empty and corrupted pages completely resolved
 ✅ Zero dead links / absolute path issues
+
+---
+
+## 📝 Update & Bugfix Log
+
+### 2026-05-26
+- **Completed Missing API Documentation**:
+  - Added documentation for `dobotlink.MagicianGO.SetTraceLoop` (which was missing from the official CHM release): [SetTraceLoop](./9%20MagicianGO%20API/9.4%20%E5%BA%95%E7%9B%98%E6%8E%A7%E5%88%B6(control)/SetTraceLoop.md).
+  - Added the alphabetical index link in [index.md](./index.md).
+- **Corrected Typographic Errors in English API Documents**:
+  - **`ConnectDobot`**: Fixed the incorrect JSON-RPC method name `dobotlink.MagicianPro.ConnectDobot` -> `dobotlink.MagicianGO.ConnectDobot` in [ConnectDobot](./9%20MagicianGO%20API/9.1%20%E8%AE%BE%E5%A4%87%E8%BF%9E%E6%8E%A5(connect)/ConnectDobot.md).
+  - **`SetRunningMode`**: Fixed the incorrect parameter name `runningState` -> `runningMode` in [SetRunningMode](./9%20MagicianGO%20API/9.4%20%E5%BA%95%E7%9B%98%E6%8E%A7%E5%88%B6(control)/SetRunningMode.md).
