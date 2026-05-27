@@ -1,11 +1,12 @@
 # Dobot 机器人开发文档库
 
-本仓库用于管理和维护 Dobot 工业机器人的各类开发手册与接口文档。目前已完成了以下四大接口文档的全量 Markdown 模块化接入、校对与优化：
+本仓库用于管理和维护 Dobot 工业机器人的各类开发手册与接口文档。目前已完成了以下五大接口文档的全量 Markdown 模块化接入、校对与优化：
 
-1.  **Dobot TCP/IP 二次开发接口文档 (V4.6.0)**
-2.  **Dobot edu API (Python SDK) 开发接口文档 (v2.2.2)**
-3.  **DobotLink API 开发接口文档 (CHM 转换中文版)**
-4.  **DobotLink API English Version Documentation (CHM 转换英文版)**
+1. **Dobot TCP/IP 二次开发接口文档 (V4.6.0)**
+2. **Dobot edu API (Python SDK) 开发接口文档 (v2.2.2)**
+3. **DobotLink API 开发接口文档 (CHM 转换中文版)**
+4. **DobotLink API English Version Documentation (CHM 转换英文版)**
+5. **Ai-Starter 智能小车用户手册 (V1.1.0)**
 
 ---
 
@@ -27,9 +28,12 @@
 │   ├── DobotLinkHelp/              # DobotLink API 模块化文档目录 (中文版)
 │   │   ├── README.md               # DobotLink 中文导航首页 (README)
 │   │   └── index.md                # 全量 API 字母顺序索引页
-│   └── DobotLinkHelp_EN/           # DobotLink API 模块化文档目录 (英文版)
-│       ├── README.md               # DobotLink 英文导航首页 (README)
-│       └── index.md                # 全量 API 字母顺序索引页
+│   ├── DobotLinkHelp_EN/           # DobotLink API 模块化文档目录 (英文版)
+│   │   ├── README.md               # DobotLink 英文导航首页 (README)
+│   │   └── index.md                # 全量 API 字母顺序索引页
+│   └── Ai-Starter/                 # Ai-Starter 智能小车文档目录
+│       ├── README.md               # Ai-Starter 导航首页 (Index)
+│       └── 01_注意事项与售后细则.md 等...
 └── README.md                       # 本说明文件 (仓库全局导引)
 ```
 
@@ -37,10 +41,11 @@
 
 ## 🚀 核心文档直达
 
-*   👉 [**Dobot TCP/IP 二次开发接口文档 (V4.6.0) 导航首页**](md/Dobot_TCP_IP_v4.6.0/README.md)
-*   👉 [**Dobot edu API (Python SDK) 接口文档 (v2.2.2) 导航首页**](md/Dobot_edu_api/README.md)
-*   👉 [**DobotLink API 接口文档 (CHM 转换中文版) 导航首页**](md/DobotLinkHelp/README.md)
-*   👉 [**DobotLink API English Version Documentation Navigation Index**](md/DobotLinkHelp_EN/README.md)
+* 👉 [**Dobot TCP/IP 二次开发接口文档 (V4.6.0) 导航首页**](md/Dobot_TCP_IP_v4.6.0/README.md)
+* 👉 [**Dobot edu API (Python SDK) 接口文档 (v2.2.2) 导航首页**](md/Dobot_edu_api/README.md)
+* 👉 [**DobotLink API 接口文档 (CHM 转换中文版) 导航首页**](md/DobotLinkHelp/README.md)
+* 👉 [**DobotLink API English Version Documentation Navigation Index**](md/DobotLinkHelp_EN/README.md)
+* 👉 [**Ai-Starter 智能小车用户手册 (V1.1.0) 导航首页**](md/Ai-Starter/README.md)
 
 ---
 
@@ -134,11 +139,11 @@
 
 ## 🛠️ 校验方式与可信度说明
 
-1.  **全量单页面爬取**：
+1. **全量单页面爬取**：
     编写专用清洗爬虫下载了 **183 个 Python 详细开发网页**，保证 API 信息 100% 覆盖。
-2.  **HTML 到 Markdown 的格式化转换**：
+2. **HTML 到 Markdown 的格式化转换**：
     基于自定义 Python `HTMLParser` 转换引擎，将原始 HTML 的排版转换为无损 Markdown 标题和代码块，彻底清除了 GitBook 背景脚本噪音。
-3.  **便携性与相对路径**：
+3. **便携性与相对路径**：
     整套文档所有的内部跳转以及根目录 README 关联均采用**相对路径链接**，完美支持在任何机器、Git 托管平台或静态网站中无缝阅读与跳转。
 
 ---
@@ -146,9 +151,26 @@
 ## 📝 更新与修复记录 (Changelog)
 
 ### 2026-05-26
-- **补齐缺失 API 文档**：
-  - 新增 `dobotlink.MagicianGO.SetTraceLoop` 接口的中文与英文文档：[中文版](md/DobotLinkHelp/9%20MagicianGO%20API/9.4%20%E5%BA%95%E7%9B%98%E6%8E%A7%E5%88%B6(control)/SetTraceLoop.md) 和 [英文版](md/DobotLinkHelp_EN/9%20MagicianGO%20API/9.4%20%E5%BA%95%E7%9B%98%E6%8E%A7%E5%88%B6(control)/SetTraceLoop.md)（原官方 CHM 文档库中缺失该接口）。
-  - 在中英文版 API 全量索引页 [index.md](md/DobotLinkHelp/index.md) 和 [index.md](md/DobotLinkHelp_EN/index.md) 中添加了对应的字母索引链接。
-- **修复英文版 API 接口笔误**：
-  - **`ConnectDobot` 接口**：将错误的 method 路径 `dobotlink.MagicianPro.ConnectDobot` 修正为正确的 `dobotlink.MagicianGO.ConnectDobot`（文件：[ConnectDobot.md](md/DobotLinkHelp_EN/9%20MagicianGO%20API/9.1%20%E8%AE%BE%E5%A4%87%E8%BF%9E%E6%8E%A5(connect)/ConnectDobot.md)）。
-  - **`SetRunningMode` 接口**：将参数 `runningState` 修正为正确的 `runningMode`（文件：[SetRunningMode.md](md/DobotLinkHelp_EN/9%20MagicianGO%20API/9.4%20%E5%BA%95%E7%9B%98%E6%8E%A7%E5%88%B6(control)/SetRunningMode.md)）。
+
+* **补齐缺失 API 文档**：
+  * 新增 `dobotlink.MagicianGO.SetTraceLoop` 接口的中文与英文文档：[中文版](md/DobotLinkHelp/9%20MagicianGO%20API/9.4%20%E5%BA%95%E7%9B%98%E6%8E%A7%E5%88%B6(control)/SetTraceLoop.md) 和 [英文版](md/DobotLinkHelp_EN/9%20MagicianGO%20API/9.4%20%E5%BA%95%E7%9B%98%E6%8E%A7%E5%88%B6(control)/SetTraceLoop.md)（原官方 CHM 文档库中缺失该接口）。
+  * 在中英文版 API 全量索引页 [index.md](md/DobotLinkHelp/index.md) 和 [index.md](md/DobotLinkHelp_EN/index.md) 中添加了对应的字母索引链接。
+* **修复英文版 API 接口笔误**：
+  * **`ConnectDobot` 接口**：将错误的 method 路径 `dobotlink.MagicianPro.ConnectDobot` 修正为正确的 `dobotlink.MagicianGO.ConnectDobot`（文件：[ConnectDobot.md](md/DobotLinkHelp_EN/9%20MagicianGO%20API/9.1%20%E8%AE%BE%E5%A4%87%E8%BF%9E%E6%8E%A5(connect)/ConnectDobot.md)）。
+  * **`SetRunningMode` 接口**：将参数 `runningState` 修正为正确的 `runningMode`（文件：[SetRunningMode.md](md/DobotLinkHelp_EN/9%20MagicianGO%20API/9.4%20%E5%BA%95%E7%9B%98%E6%8E%A7%E5%88%B6(control)/SetRunningMode.md)）。
+
+---
+
+### 5. Ai-Starter 智能小车用户手册 (V1.1.0)
+
+以下是 `md/Ai-Starter/` 子目录下所有子文档的状态：
+
+| 子文档名称 | 对应 PDF 章节 | 内容完整度 | 校验状态 | 详细备注 / 统计数据 |
+| :--- | :--- | :---: | :---: | :--- |
+| [**README.md**](md/Ai-Starter/README.md) | 封面、免责声明、前言 | **全量完整** | ✅ 已校验 | 包含版权声明、修订记录与符号约定及章节导引 |
+| [**01_注意事项与售后细则.md**](md/Ai-Starter/01_注意事项与售后细则.md) | 1 注意事项 | **全量完整** | ✅ 已校验 | 包含小车使用安全与完整的三包售后条款 |
+| [**02_产品简介与技术规格.md**](md/Ai-Starter/02_产品简介与技术规格.md) | 2 产品简介、技术规格 | **全量完整** | ✅ 已校验 | 包含零件清单与控制板核心硬件参数对照表 |
+| [**03_控制器与传感器特性.md**](md/Ai-Starter/03_控制器与传感器特性.md) | 3 特性说明 | **全量完整** | ✅ 已校验 | 包含引脚接口图、按键 LED 含义及三大板载传感器 |
+| [**04_安装与使用指南.md**](md/Ai-Starter/04_安装与使用指南.md) | 4 安装指南、5 使用指南 | **全量完整** | ✅ 已校验 | 包含 Mixly 图形编程与 Arduino IDE 软件安装和联机下载 |
+| [**05_AI_Starter_Demo.md**](md/Ai-Starter/05_AI_Starter_Demo.md) | 6 AI-Starter Demo | **全量完整** | ✅ 已校验 | 包含自动避障、白平衡校准、巡线等 **26 个** 经典示例源码 |
+| [**06_API_接口.md**](md/Ai-Starter/06_API_接口.md) | 7 API 接口 | **全量完整** | ✅ 已校验 | 包含主控底层电机、地磁、传感器等 **30 个** 核心 C++ API 函数 |
